@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Юлия Портнова](https://up.htmlacademy.ru/htmlcss/20/user/454717).
-* Наставник: [Виктор Кан].
+* Наставник: [Виктор Кан] (https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
