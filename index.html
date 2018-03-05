@@ -6,23 +6,18 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo">
-        <img src="img/logo.svg" alt="Логотип компании GllacyShop" widght="160" height="70">
-      </a>
-      
-      <section class="navigation">
-        <!--TODO: добавить nav-->
-        <ul class="site-navigation">
-          <li>
-            <a href="catalog-sundae.html">Каталог</a>
-          </li>
-          <li>
-            <a href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a href="#">О компании</a>
-          </li>
-        </ul>
+      <section class="main-navigation">
+        <nav>
+          <a class="logo-navigation">
+            <img src="img/logo.svg" alt="Логотип компании GllacyShop" widght="160" height="70">
+            <!--TODO: уточнить размеры картинки-->
+          </a>
+          <ul class="site-navigation">
+            <li><a href="catalog-sundae.html">Каталог</a></li>
+            <li><a href="#">Доставка и оплата</a></li>
+            <li><a href="#">О компании</a></li>
+          </ul>
+        </nav>
         <ul class="user-navigation">
           <li class="search">Поиск</li>
           <li class="login-link">Вход</li>
@@ -36,24 +31,27 @@
       <h1 class="visually-hidden">Магазин по продаже мороженого GllacyShop</h1>
     
       <section class="slider">
-        <div>
-          <p>Крем-брюле и пломбир с малиновым джемом</p>
-        </div>
+        <p class="slider-text">Крем-брюле и пломбир с малиновым джемом</p>
+        <ul>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
         <a href="#" class="btn slider-btn">Давайте оба!</a>
       </section>
     
-      <section class="promotion">
+      <section class="promo">
         <h2 class="visually-hidden">Акции</h2>
         <ul>
-          <li class="promotion-raspberry">
+          <li class="promo-raspberry">
             <h3>Малинка даром!</h3>
             <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
-            <a href="#" class="btn promotion-btn">Хочу варенье!</a>
+            <a href="#" class="btn promo-btn">Хочу варенье!</a>
           </li>
-          <li class="promotion-raspberry">
+          <li class="promo-chocolate">
             <h3>Шоколадки даром!</h3>
             <p>При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
-            <a href="#" class="btn promotion-btn">Хочу шоколадки!</a>
+            <a href="#" class="btn promo-btn">Хочу шоколадки!</a>
           </li>
         </ul>
       </section>
@@ -62,31 +60,33 @@
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="catalog-items">
           <li>
-            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3><img src="img/catalog-item-1" width="270" height="270" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
+            <img src="img/catalog-item-1" width="270" height="270" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
             <b>310₽</b>
             <span>/кг</span>
-            <a href="#">Быстрый просмотр</a>
+            <a class="btn catalog-btn" href="#">Быстрый просмотр</a>
+            <!--TODO: Проверить все размеры изображений-->
           </li>
           <li>
             <h3>Сливочно-кофейное с кусочками шоколада</h3>
             <img src="img/catalog-item-2" width="270" height="270" alt="Сливочно-кофейное с кусочками шоколада">
             <b>380₽</b>
             <span>/кг</span>
-            <a href="#">Быстрый просмотр</a>
+            <a class="btn catalog-btn" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             <img src="img/catalog-item-3" width="270" height="270" alt="Сливочно-клубничное с присыпкой из белого шоколада">
             <b>355₽</b>
             <span>/кг</span>
-            <a href="#">Быстрый просмотр</a>
+            <a class="btn catalog-btn" href="#">Быстрый просмотр</a>
           </li>
           <li>
             <h3>Сливочноe крем-брюле с карамельной подливкой</h3>
             <img src="img/catalog-item-4" width="270" height="270" alt="Сливочноe крем-брюле с карамельной подливкой">
             <b>415₽</b>
             <span>/кг</span>
-            <a href="#">Быстрый просмотр</a>
+            <a class="btn catalog-btn" href="#">Быстрый просмотр</a>
           </li>
         </ul>
       </section>
@@ -131,7 +131,7 @@
         <h2 class="visually-hidden">Адрес и телефон</h2>
         <p>Адрес главного офиса и офлайн-магазина:<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
         <p>Для заказов по телефоу: <b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-        <a href="#">Форма обратной связи</a>
+        <a class="btn contact-btn" href="#">Форма обратной связи</a>
       </section>
     </main>
     <footer>
@@ -151,7 +151,7 @@
       
       <div class="footer-copyright">
         <p>html academy</p>
-        <р>Сделано в<a href="https://htmlacademy.ru">HTML Academy</a>2017</р>
+        <p>Сделано в <a href="https://htmlacademy.ru"> HTML Academy</a> 2017</p>
       </div>
     </footer>
   </body>
