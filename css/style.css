@@ -104,23 +104,65 @@ a {
 }
 
 .btn {
+  font: inherit;
   color: #ffffff;
   background-color: #e84d37;
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
   width: 100px;
   height: 44px;
   text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  border: none;
+  padding: 10px;
   /* уточнить размеры и тень*/
+}
+
+.btn:hover,
+.btn:focus {
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  background-color: #ffffff;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
+  background-image: linear-gradient(90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+}
+
+.btn:active {
+  background-image: linear-gradient(90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
 }
 
 .login-link-form a {
   color: #323232;
 }
 
+.show-hover:hover,
+.show-hover:focus,
+.show-hover:active {
+  color: #e84d37;
+}
+
+.basket-table {
+  color: #323232;
+  background-color: #f8f7f4;
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.basket-table-price {
+  color: #999999;
+}
+
+.basket-table-sum {
+  font-size: 15px;
+  line-height: 18px;
+  font-weight: 700;
+}
+
 .tel {
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
+  text-align: right;
 }
 
 .tel b {
@@ -136,6 +178,7 @@ a {
   font-size: 60px;
   line-height: 60.35px;
   font-weight: 700;
+  text-align: center;
 } 
 
 .slider-item:nth-of-type(1) {
@@ -198,10 +241,15 @@ a {
   font-weight: 700; 
 }
 
-.promo-item .promo-btn{
+.promo-item .promo-btn {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700; 
+}
+
+.promo-item .promo-btn:hover,
+.promo-item .promo-btn:active {
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
 }
 
 .catalog-items {
@@ -210,6 +258,7 @@ a {
 
 .catalog-items h3 {
   font-weight: 500;
+  text-align: center;
 }
 
 .catalog-items b{
@@ -251,6 +300,13 @@ a {
   background-position: top center;
 }
 
+.blog a {
+  color: #323232;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+}
+
 .spam {
   color: #5a5a5a;
   background-color: #f8f7f4;
@@ -263,6 +319,11 @@ a {
   background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
   */
 
+.contact {
+  color: #323232;
+  background-color: #fefefe;
+}
+
 .contact p {
   font-size: 14px;
   line-height: 20px;
@@ -273,6 +334,78 @@ a {
   line-height: 24px;
   font-weight: 700;
 }
+
+/*стилизация особенностей страницы каталога Сливочное*/
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs a {
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.fat-block,
+.filler-block {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.btn-filter {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 2px solid #ffffff;
+}
+
+.btn-filter:hover,
+.btn-filter:focus {
+  color: #323232;
+  background-color: #fbfcfb;
+}
+
+.btn-filter:active {
+  color: #323232;
+  background-color: #eaeaea;
+}
+
+.filter .sort {
+  color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.filter label,
+.filter legend {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 500;
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.pagination-item a:active {
+  color: #323232;
+}
+
+.pagination-item-curent a{
+  color: #323232;
+  background-color: #ffffff;
+}
+/*окончание стилизации особенностей страницы каталога Сливочное*/
 
 .feedback-form {
   color: #323232;
@@ -298,6 +431,12 @@ a {
 
 .footer-menu li:nth-of-type(1){
   font-weight: 700;
+}
+
+.show-hover-white:hover,
+.show-hover-white:focus,
+.show-hover-white:active {
+  color: #ffbc9e;
 }
 
 .footer-copyright {

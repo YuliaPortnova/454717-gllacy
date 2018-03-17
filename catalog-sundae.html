@@ -34,17 +34,17 @@
           <li class="basket-active"><a href="#">Корзина <span>2 товара</span></a></li>
         </ul>
       </section>
-      <span class="tel">С 10 до 20, ежедневно<br><b>8 812 450-25-25</b></span>
+      <p class="tel">С 10 до 20, ежедневно<br><b>8 812 450-25-25</b></p>
       
       <!--Форма для поиска-->
-      <form name="search-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden">Поиск по сайту
           <input type="search" name="search" placeholder="Что ищем?" required>
         </label>
       </form>
   
       <!--Форма входа-->
-      <form name="login-link-form" action="https://echo.htmlacademy.ru" method="post">
+      <form class="login-link-form" name="login-link-form" action="https://echo.htmlacademy.ru" method="post">
         <label class="visually-hidden">Электронная почта
           <input class="email" type="email" name="email" placeholder="Электронная почта" required>
         </label>
@@ -52,40 +52,40 @@
           <input class="password" type="password" name="password" placeholder="Пароль" required>
         </label>
         <input class="btn login-link-btn" type="submit" value="Войти">
-        <a class="remember" href="#">Забыли пароль?</a>
-        <a class="registration" href="#">Новая регистрация</a>
+        <a class="remember show-hover" href="#">Забыли пароль?</a>
+        <a class="registration show-hover" href="#">Новая регистрация</a>
       </form>
       
       <!--Корзина-->
-      <section class="basket">
+      <section class="basket-table">
         <h2 class="visually-hidden">Ваш заказ</h2>
-        <table class="basket-table">
+        <table>
           <tr>
             <td><button class="button">x</button></td>
             <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг × 200 руб.</td>
+            <td>1,5 кг × <span class="basket-table-price">200 руб.</span></td>
             <td>300 руб.</td>
           </tr>
           <tr>
             <td><button class="button">x</button></td>
             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг × 300 руб.</td>
+            <td>1,5 кг × <span class="basket-table-price">300 руб.</span></td>
             <td>450 руб.</td>
           </tr>
           <tr>
-            <td colspan="4">Итого: 750 руб.</td>
+            <td class="basket-table-sum" colspan="4">Итого: 750 руб.</td>
           </tr>
         </table>
-        <a class="order " href="#">Оформить заказ</a>
+        <a class="btn basket-table-btn" href="#">Оформить заказ</a>
       </section>
       
     </header>
     
     <main class="container">
       <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="#">Каталог</a></li>
-        <li class="breadcrumbs-current"><span class="visually-hidden">Текущий пункт:</span>Сливочное</li>
+        <li><a class="show-hover-white" href="index.html">Главная</a></li>
+        <li><a class="show-hover-white" href="#">Каталог</a></li>
+        <li class="breadcrumbs-current"><a><span class="visually-hidden">Текущий пункт:</span>Сливочное</a></li>
       </ul>
       <h1 class="page-title">Сливочное мороженое</h1>
 
@@ -246,7 +246,7 @@
       </section>
       
       <ul class="pagination-list">
-        <li class="pagination-item"><a><span class="visually-hidden">Текущая страница:</span>1</a></li>
+        <li class="pagination-item pagination-item-curent"><a><span class="visually-hidden">Текущая страница:</span>1</a></li>
         <li class="pagination-item"><a href="#">2</a></li>
         <li class="pagination-item"><a href="#">3</a></li>
         <li class="pagination-item"><a href="#">4</a></li>
@@ -263,15 +263,15 @@
       </ul>
       
       <ul class="footer-menu">
-        <li><a href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
+        <li><a class="show-hover-white" href="#">Для поставщиков</a></li>
+        <li><a class="show-hover-white" href="#">О производстве</a></li>
+        <li><a class="show-hover-white" href="#">Наши документы</a></li>
+        <li><a class="show-hover-white" href="#">Экологические стандарты</a></li>
       </ul>
       
       <div class="footer-copyright">
         <p>html academy</p>
-        <span>Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> 2017</span>
+        <span>Сделано в <a class="show-hover-white" href="https://htmlacademy.ru">HTML Academy</a> 2017</span>
       </div>
     </footer>
   </body>
