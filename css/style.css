@@ -13,10 +13,19 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
 .site-navigation,
 .user-navigation,
 .catalog-menu {
   list-style: none;
+  padding: 0;
 }
 
 .site-navigation a,
@@ -107,7 +116,7 @@ a {
   font: inherit;
   color: #ffffff;
   background-color: #e84d37;
-  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
+  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.4);
   width: 100px;
   height: 44px;
   text-decoration: none;
@@ -122,13 +131,13 @@ a {
 .btn:focus {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   background-color: #ffffff;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.004);
-  background-image: linear-gradient(90deg, rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.4);
+  background-image: linear-gradient(rgb(231,74,53) 0%, rgb(242,104,67) 100%);
 }
 
-.btn:active {
+.btn:active { 
   background-image: linear-gradient(90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.004);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.4);
 }
 
 .login-link-form a {
@@ -158,6 +167,37 @@ a {
   font-weight: 700;
 }
 
+.main-navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 1146px;
+  margin: 0 auto;
+  padding: 0 27px;
+}
+
+.main-navigation nav {
+  display: flex;
+  width: 853px; 
+}
+
+.site-navigation {
+  display: flex;
+}
+
+.site-navigation .main-menu {
+  margin-right: 29px;
+  /*возможно временно*/
+}
+
+.user-navigation {
+  display: flex;
+  width: 267px;
+  justify-content: space-between;/*возможно временно*/
+}
+
 .tel {
   font-size: 14px;
   line-height: 16px;
@@ -172,6 +212,8 @@ a {
 
 .slider {
   list-style: none;
+  padding: 0;
+  margin-bottom: 40px;
 }
 
 .slider-text {
@@ -183,7 +225,7 @@ a {
 
 .slider-item:nth-of-type(1) {
   background-color: #849d8f;
-  background-image: url("/img-png/slider-1.png");
+  background-image: url("../img-png/slider-1.png");
   background-repeat: no-repeat;
   background-position: top center;
   height: 650px; /*уточнить*/
@@ -191,7 +233,7 @@ a {
 
 .slider-item:nth-of-type(2) {
   background-color: #8996a6;
-  background-image: url("/img-png/slider-2.png");
+  background-image: url("../img-png/slider-2.png");
   background-repeat: no-repeat;
   background-position: top center;
   height: 650px; /*уточнить*/
@@ -199,7 +241,7 @@ a {
 
 .slider-item:nth-of-type(3) {
   background-color: #9d8b84;
-  background-image: url("/img-png/slider-3.png");
+  background-image: url("../img-png/slider-3.png");
   background-repeat: no-repeat;
   background-position: top center;
   height: 650px; /*уточнить*/
@@ -211,20 +253,28 @@ a {
   font-weight: 700;
 }
 
+.promo {
+   margin-bottom: 40px;
+}
+
 .promo ul {
   list-style: none;
 }
 
+.promo-item {
+  width: 560px; 
+}
+
 .promo-item:nth-of-type(1) {
   background-color: #761a2d;
-  background-image: url("/img-png/raspberry.png");
+  background-image: url("../img-png/raspberry.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
 
 .promo-item:nth-of-type(2) {
   background-color: #492e21;
-  background-image: url("/img-png/choco.png");
+  background-image: url("../img-png/choco.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -252,8 +302,22 @@ a {
   box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.004);
 }
 
+.promo-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.catalog {
+  margin-bottom: 40px;
+}
+
 .catalog-items {
+  display: flex;
   list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .catalog-items h3 {
@@ -273,6 +337,10 @@ a {
   font-weight: 700; 
 }
 
+.catalog-items li {
+  flex-basis: 267px;
+}
+
 .catalog-items li:hover,
 .catalog-items li:focus {
   background-color: rgba(255, 255, 255, 0.2);
@@ -281,9 +349,10 @@ a {
 .features {
   color: #323232;
   background-color: #ede1c5;
-  background-image: url("/img-jpg/waffle.jpg");
+  background-image: url("../img-jpg/waffle.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+  margin-bottom: 40px;
 }
 
 .features > p {
@@ -292,10 +361,17 @@ a {
   font-weight: 500;
 }
 
+.blog-spam {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
 .blog {
+  width: 560px;
   color: #323232;
   background-color: #ffffff;
-  background-image: url("/img-png/strawberry.png");
+  background-image: url("../img-png/strawberry.png");
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -308,9 +384,11 @@ a {
 }
 
 .spam {
+  width: 560px;
   color: #5a5a5a;
   background-color: #f8f7f4;
-  background-image: url("/img-svg/spam.svg");
+  background-image: url("../img-svg/spam.svg");
+  background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
   background-repeat: no-repeat;
   background-position: top center;
 }
@@ -318,6 +396,11 @@ a {
   /* Разобраться
   background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
   */
+
+.container-large {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 .contact {
   color: #323232;
@@ -333,6 +416,17 @@ a {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
+}
+
+.feedback-form {
+  color: #323232;
+  background-color: #f8f7f4;
+}
+
+.feedback-form p {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 500;
 }
 
 /*стилизация особенностей страницы каталога Сливочное*/
@@ -406,21 +500,19 @@ a {
   background-color: #ffffff;
 }
 /*окончание стилизации особенностей страницы каталога Сливочное*/
-
-.feedback-form {
-  color: #323232;
-  background-color: #f8f7f4;
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between
 }
 
-.feedback-form p {
-  font-size: 24px;
-  line-height: 28px;
-  font-weight: 500;
+.footer-social {
+  list-style: none;
+  width: 267px;
 }
 
-.footer-social,
 .footer-menu {
   list-style: none;
+  width: 340px;
 }
 
 .footer-menu a {
@@ -443,6 +535,7 @@ a {
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
+  width: 190px;
 }
 
 .footer-copyright a {
