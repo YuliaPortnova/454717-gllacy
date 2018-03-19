@@ -69,13 +69,13 @@ a {
   background-color: #d07058;
 }
 
-.site-navigation-current a{
+.site-navigation-current > a{
   color: #ffffff;
   background-color: #d07058;
 }
 
-.site-navigation-current a:hover,
-.site-navigation-current a:focus {
+.site-navigation-current > a:hover,
+.site-navigation-current > a:focus {
   color: #ffffff;
   background-color: #d07058;
 }
@@ -116,7 +116,9 @@ a {
   font: inherit;
   color: #ffffff;
   background-color: #e84d37;
-  box-shadow: 0px 1px 2px 0px rgba(172, 16, 0, 0.4);
+  background-image: (rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   width: 100px;
   height: 44px;
   text-decoration: none;
@@ -130,14 +132,17 @@ a {
 .btn:hover,
 .btn:focus {
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  background-color: #ffffff;
-  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.4);
-  background-image: linear-gradient(rgb(231,74,53) 0%, rgb(242,104,67) 100%);
+  background-color: #f07b64;
+  box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.8);
+  background-image: linear-gradient(#f58669 5%, #ec6f5e 95%);
 }
 
 .btn:active { 
-  background-image: linear-gradient(90deg, rgb(242,104,67) 0%, rgb(231,74,53) 100%);
-  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.4);
+  background-color: #db543a;
+  background-image: linear-gradient(#d84732 5%, #e1613e 95%);
+  box-shadow: inset 0px 2px 2px 0px rgba(148, 39, 24, 0.8);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
+  outline: none;
 }
 
 .login-link-form a {
@@ -262,8 +267,13 @@ a {
 }
 
 .promo-item {
+  box-sizing: border-box;
   width: 560px; 
+  padding: 22px 21px 22px 19px;
+  border-radius: 15px;
 }
+
+/*TODO может быть увеличить размер картинки, чтобы не появлялся фон при переполнении...?*/
 
 .promo-item:nth-of-type(1) {
   background-color: #761a2d;
@@ -308,10 +318,6 @@ a {
   padding: 0;
 }
 
-.catalog {
-  margin-bottom: 40px;
-}
-
 .catalog-items {
   display: flex;
   list-style: none;
@@ -339,6 +345,7 @@ a {
 
 .catalog-items li {
   flex-basis: 267px;
+  margin-bottom: 40px;
 }
 
 .catalog-items li:hover,
@@ -350,15 +357,33 @@ a {
   color: #323232;
   background-color: #ede1c5;
   background-image: url("../img-jpg/waffle.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: top center;
   margin-bottom: 40px;
+  box-sizing: border-box;
+  padding: 28px 30px 28px 20px;
+  border-radius: 15px;
 }
 
 .features > p {
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
+}
+
+.features > ul {
+  list-style: none;
+  padding: 0px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.features-item {
+  flex-basis: 542px;
+} 
+
+.features-item:nth-child(2n) {
+  flex-basis: 530px;
 }
 
 .blog-spam {
@@ -374,6 +399,10 @@ a {
   background-image: url("../img-png/strawberry.png");
   background-repeat: no-repeat;
   background-position: top center;
+  box-sizing: border-box;
+  padding: 26px 19px;
+  min-height: 220px;
+  border-radius: 15px;
 }
 
 .blog a {
@@ -388,11 +417,16 @@ a {
   color: #5a5a5a;
   background-color: #f8f7f4;
   background-image: url("../img-svg/spam.svg");
-  background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
   background-repeat: no-repeat;
   background-position: top center;
+  box-sizing: border-box;
+  padding: 5px 6px;
+  border-radius: 15px;
 }
-  
+
+.spam-wrapper {
+  background-color: #f8f7f4;
+}
   /* Разобраться
   background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
   */
@@ -479,6 +513,12 @@ a {
 
 .pagination-list {
   list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination-item {
+  padding: 10px;
 }
 
 .pagination-item a {
@@ -486,19 +526,24 @@ a {
   font-weight: 500;
 }
 
-.pagination-item a:hover,
-.pagination-item a:focus {
+.pagination-item:hover:not(.pagination-item-curent),
+.pagination-item:focus:not(.pagination-item-curent) {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
-.pagination-item a:active {
+.pagination-item:active a {
   color: #323232;
+}
+
+.pagination-item-curent{
+  color: #323232;
+  background-color: #ffffff;
 }
 
 .pagination-item-curent a{
   color: #323232;
-  background-color: #ffffff;
 }
+
 /*окончание стилизации особенностей страницы каталога Сливочное*/
 .footer-wrapper {
   display: flex;
