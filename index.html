@@ -22,7 +22,7 @@
               </a>
               <ul class="site-navigation">
                 <li class="main-menu">
-                  <a href="#">Каталог</a>
+                  <a class="main-menu-catalog" href="#"><span class="underline">Каталог</span></a>
                   <ul class="catalog-menu">
                     <li><a href="#">Новинки</a></li>
                     <li><a href="catalog-sundae.html">Сливочное</a></li>
@@ -31,8 +31,8 @@
                     <li><a href="#">Мелорин</a></li>
                   </ul>
                 </li>
-                <li class="main-menu"><a href="#">Доставка и оплата</a></li>
-                <li class="main-menu"><a href="#">О компании</a></li>
+                <li class="main-menu"><a href="#"><span class="underline">Доставка и оплата</span></a></li>
+                <li class="main-menu"><a href="#"><span class="underline">О компании</span></a></li>
               </ul>
             </nav>
             <ul class="user-navigation">
@@ -132,18 +132,20 @@
                 </li>
               </ul>
             </section>
-
+          </div>
+          
+          <div class="container-catalog">
             <section class="catalog">
               <h2 class="visually-hidden">Каталог товаров</h2>
               <ul class="catalog-list">
-                <li class="catalog-item">
+                <li class="catalog-item hit">
                   <figure>
                     <img src="img-png/catalog-item-1.png" width="267" height="267" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
                     <figcaption>
-                      Сливочное с апельсиновым джемом и цитрусовой стружкой
+                      <span class="underline">Сливочное с апельсиновым джемом и цитрусовой стружкой</span>
                     </figcaption>
                   </figure>
-                  <p>
+                  <p class="catalog-price">
                     <b>310₽</b>
                     <span>/кг</span>
                   </p>
@@ -151,14 +153,14 @@
                     <a class="btn catalog-btn">Быстрый просмотр</a>
                   </div>   
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item hit">
                   <figure>
                     <img src="img-png/catalog-item-2.png" width="267" height="267" alt="Сливочно-кофейное с кусочками шоколада">
                     <figcaption>
-                      Сливочно-кофейное с кусочками шоколада
+                      <span class="underline">Сливочно-кофейное с кусочками шоколада</span>
                     </figcaption>
                   </figure>
-                  <p>
+                  <p class="catalog-price">
                     <b>380₽</b>
                     <span>/кг</span>
                   </p>
@@ -166,14 +168,14 @@
                     <a class="btn catalog-btn" href="#">Быстрый просмотр</a>
                   </div>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item hit">
                   <figure>
                     <img src="img-png/catalog-item-3.png" width="267" height="267" alt="Сливочно-клубничное с присыпкой из белого шоколада">
                     <figcaption>
-                      Сливочно-клубничное с присыпкой из белого шоколада
+                      <span class="underline">Сливочно-клубничное с присыпкой из белого шоколада</span>
                     </figcaption>
                   </figure>
-                  <p>
+                  <p class="catalog-price">
                     <b>355₽</b>
                     <span>/кг</span>
                   </p>
@@ -181,14 +183,14 @@
                     <a class="btn catalog-btn" href="#">Быстрый просмотр</a>
                   </div>
                 </li>
-                <li class="catalog-item">
+                <li class="catalog-item hit">
                   <figure>
                     <img src="img-png/catalog-item-4.png" width="267" height="267" alt="Сливочноe крем-брюле с карамельной подливкой">
                     <figcaption>
-                      Сливочноe крем-брюле с карамельной подливкой
+                      <span class="underline">Сливочноe крем-брюле с карамельной подливкой</span>
                     </figcaption>
                   </figure>
-                  <p>
+                  <p class="catalog-price">
                     <b>415₽</b>
                     <span>/кг</span>
                   </p>
@@ -198,7 +200,9 @@
                 </li>
               </ul>
             </section>
-
+          </div>
+          
+          <div class="container">
             <section class="features">     
               <h2 class="visually-hidden">Преимущества</h2>
               <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -239,7 +243,7 @@
             </div>
           </div>
 
-          <section class="map container-large">
+          <section class="map container-map">
             <h2 class="visually-hidden">Наш магазин на карте</h2>
             <img src="img-png/map.png" width="1200" height="430" alt="Наш магазин на карте">
             <span>x</span>
@@ -276,10 +280,10 @@
           </ul>
 
           <ul class="footer-menu">
-            <li><a class="show-hover-white" href="#">Для поставщиков</a></li>
-            <li><a class="show-hover-white" href="#">О производстве</a></li>
-            <li><a class="show-hover-white" href="#">Наши документы</a></li>
-            <li><a class="show-hover-white" href="#">Экологические стандарты</a></li>
+            <li><a class="show-hover-white underline" href="#">Для поставщиков</a></li>
+            <li><a class="show-hover-white underline" href="#">О производстве</a></li>
+            <li><a class="show-hover-white underline" href="#">Наши документы</a></li>
+            <li><a class="show-hover-white underline" href="#">Экологические стандарты</a></li>
           </ul>
 
           <div class="footer-copyright">
@@ -287,7 +291,7 @@
               <img src="img-png/logo-htmlacademy.png" width="108px" height="39px" alt="HTML Academy">
             </a>
           
-            <p>Сделано в <a class="show-hover-white" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> 2017</p>
+            <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> 2017</p>
           </div>
         </footer>
       </div>
