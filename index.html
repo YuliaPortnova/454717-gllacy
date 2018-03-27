@@ -23,7 +23,7 @@
               <li class="main-menu">
                 <a class="main-menu-catalog" href="#"><span class="underline">Каталог</span></a>
                 <ul class="catalog-menu">
-                  <li><a href="#">Новинки</a></li>
+                  <li class="catalog-menu-new"><a href="#">Новинки</a></li>
                   <li><a href="catalog-sundae.html">Сливочное</a></li>
                   <li><a href="#">Щербеты</a></li>
                   <li><a href="#">Фруктовый лед</a></li>
@@ -34,8 +34,9 @@
               <li class="main-menu"><a href="#"><span class="underline">О компании</span></a></li>
             </ul>
           </nav>
+      
           <ul class="user-navigation">
-            <li class="search">
+            <li class="search-item">
               <a href="#">
                 <span class="visually-hidden">Поиск</span>
                 <svg width="17" height="17">
@@ -43,8 +44,15 @@
                   <path fill="#FFF" d="M16.958 15.527L11.75 10.32A6.455 6.455 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13a6.465 6.465 0 0 0 3.839-1.263l5.205 5.204 1.414-1.414zM6.5 11C4.019 11 2 8.981 2 6.5S4.019 2 6.5 2 11 4.019 11 6.5 8.981 11 6.5 11z"/>
                 </svg>
               </a>
+                      <!--Форма для поиска-->
+              <div class="wrapper-form">
+                <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label for="search-id" class="visually-hidden">Поиск по сайту</label>
+                  <input type="search" name="search" id="search-id" placeholder="Что ищем?" required>
+                </form>
+              </div>
             </li>
-            <li>
+            <li class="login-link-item">
               <a class="login-link" href="#">
                 <span>Вход</span>
                 <svg width="21" height="19" viewBox="0 0 21 19">
@@ -54,6 +62,18 @@
                   </g>
                 </svg>
               </a>
+                      <!--Форма входа-->
+              <div class="wrapper-form">
+                <form class="login-link-form" name="login-link-form" action="https://echo.htmlacademy.ru" method="post">
+                  <label for="email-login-link" class="visually-hidden">Электронная почта</label>
+                  <input class="email" type="email" name="email" id="email-login-link" placeholder="Электронная почта" required>
+                  <label for="password-login-link" class="visually-hidden">Пароль</label>
+                  <input class="password" type="password" name="password" id="password-login-link" placeholder="Пароль" required>
+                  <input class="btn login-link-btn" type="submit" value="Войти">
+                  <a class="remember show-hover" href="#">Забыли пароль?</a>
+                  <a class="registration show-hover" href="#">Новая регистрация</a>
+                </form>
+              </div>
             </li>
             <li class="basket-disabled">
               <a href="#">
@@ -64,23 +84,6 @@
           </ul>
         </section>
         <p class="tel">С 10 до 20, ежедневно<br><b>8 812 450-25-25</b></p>
-
-        <!--Форма для поиска-->
-        <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="search-id" class="visually-hidden">Поиск по сайту</label>
-          <input type="search" name="search" id="search-id" placeholder="Что ищем?" required>
-        </form>
-
-        <!--Форма входа-->
-        <form class="login-link-form" name="login-link-form" action="https://echo.htmlacademy.ru" method="post">
-          <label for="email-login-link" class="visually-hidden">Электронная почта</label>
-            <input class="email" type="email" name="email" id="email-login-link" placeholder="Электронная почта" required>
-          <label for="password-login-link" class="visually-hidden">Пароль</label>
-            <input class="password" type="password" name="password" id="password-login-link" placeholder="Пароль" required>
-          <input class="btn login-link-btn" type="submit" value="Войти">
-          <a class="remember show-hover" href="#">Забыли пароль?</a>
-          <a class="registration show-hover" href="#">Новая регистрация</a>
-        </form>
       </header>
 
       <main>
@@ -240,28 +243,13 @@
         <section class="map container-map">
           <h2 class="visually-hidden">Наш магазин на карте</h2>
           <img src="img-png/map.png" width="1200" height="430" alt="Наш магазин на карте">
-          <span>x</span>
+          <section class="contact">
+            <h2 class="visually-hidden">Адрес и телефон</h2>
+            <p class="text-1">Адрес главного офиса<br> и офлайн-магазина:<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+            <p class="text-2">Для заказов по телефону: <b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
+            <a class="btn contact-btn" href="#">Форма обратной связи</a>
+          </section>
         </section>
-
-        <section class="contact">
-          <h2 class="visually-hidden">Адрес и телефон</h2>
-          <p>Адрес главного офиса и офлайн-магазина:<b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
-          <p>Для заказов по телефоу: <b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
-          <a class="btn contact-btn" href="#">Форма обратной связи</a>
-        </section>
-
-        <!--Форма обратной связи-->
-        <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-          <p>Мы обязательно вам ответим!</p>
-          <label for="feedback-form-name" class="visually-hidden">Как вас зовут?</label>
-          <input class="name" type="name" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
-          <label class="visually-hidden">Ваша почта для ответа?</label>
-          <input for="feedback-form-email" class="email" type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
-          <label for="feedback-form-feedback" class="visually-hidden">Ваше сообщение</label>
-          <textarea class="feedback" name="feedback" id="feedback-form-feedback" required>Напишите что-нибудь</textarea>
-          <input class="btn" type="submit" value="Отправить">
-          <button type="button">Закрыть</button>
-        </form>
 
       </main>
 
@@ -286,8 +274,43 @@
           </a>
 
           <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> 2017</p>
+          
         </div>
       </footer>
     </div>
+        <!--Форма обратной связи-->
+    <section class="modal-feedback">
+      <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>Мы обязательно вам ответим!</p>
+        <label for="feedback-form-name" class="visually-hidden">Как вас зовут?</label>
+        <input class="name" type="name" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
+        <label class="visually-hidden">Ваша почта для ответа?</label>
+        <input for="feedback-form-email" class="email" type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
+        <label for="feedback-form-feedback" class="visually-hidden">Ваше сообщение</label>
+        <textarea class="feedback" name="feedback" id="feedback-form-feedback" rows="5" placeholder="Напишите что-нибудь..." required></textarea>
+        <input class="btn feedback-btn" type="submit" value="Отправить">
+      </form>
+      <button class="close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+    </section>
+    <div class="modal-overlay"></div>
+    
+    <script>
+      var popup_btn = document.querySelector(".contact-btn");
+      var popup = document.querySelector(".modal-feedback");
+      var close = popup.querySelector(".close-btn");
+      var overlay = document.querySelector(".modal-overlay");
+      
+      popup_btn.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.add("modal-show");
+        overlay.classList.add("modal-show-overlay");
+      });
+      
+      close.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.remove("modal-show");
+        overlay.classList.remove("modal-show-overlay");
+      });
+    </script>
   </body>
 </html>
