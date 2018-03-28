@@ -124,7 +124,8 @@ input[type="radio"].visually-hidden {
 
 
 .site-navigation{
-  margin-top: 30px;
+  margin-top: 27px;
+  padding-left: 8px;
 }
 
 .site-navigation a,
@@ -134,7 +135,6 @@ input[type="radio"].visually-hidden {
 
 .main-menu:first-child {
   position: relative;
-  line-height: 18px;
   font-weight: 700;
 } 
 
@@ -222,7 +222,7 @@ input[type="radio"].visually-hidden {
 .user-navigation {
   display: flex;
   flex-wrap: wrap;
-  width: 267px;
+  width: 260px;
   justify-content: space-between;/*возможно временно*/
   align-items: flex-start;
   margin-top: 23px;
@@ -265,6 +265,8 @@ input[type="radio"].visually-hidden {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+  align-content: baseline;
 }
 
 .search-item {
@@ -604,7 +606,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   margin: 0;
   padding: 0;
-  bottom: -20px;
+  bottom: -25px;
   right: 27px;
   font-size: 14px;
   line-height: 16px;
@@ -614,6 +616,7 @@ input[type="radio"].visually-hidden {
 
 .tel b {
   display: block;
+  padding-top: 5px;
   font-size: 22px;
   line-height: 24px;
 }
@@ -824,8 +827,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 61px;
   height: 61px;
-  top: 0;
-  left: 13;
+  top: 6px;
+  left: 13px;
   background-image: url("../img-svg/hit.svg");
 }
 
