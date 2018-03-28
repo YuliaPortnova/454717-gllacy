@@ -124,7 +124,7 @@
         <form name="filter-form" action="https://echo.htmlacademy.ru" method="post">
           <div class="filter-row">
             <div class="filter-row-sort">
-              <label class="sort-title" for="sort-filter">Сортировка</label>
+              <label class="sort-title" for="sort-filter">Сортировка:</label>
               <select class="sort" name="sort" id="sort-filter">
                 <option value="popular">по популярности</option>
                 <option value="price<">сначала недорогие</option>
@@ -387,15 +387,17 @@
         </ul>
       </section>
       
-      <ul class="pagination-list container">
-        <li class="pagination-control left disabled"><a><span class="visually-hidden">Назад</span></a></li>
-        <li class="pagination-item pagination-item-curent"><a><span class="visually-hidden">Текущая страница:</span>1</a></li>
-        <li class="pagination-item"><a href="#">2</a></li>
-        <li class="pagination-item"><a href="#">3</a></li>
-        <li class="pagination-item"><a href="#">4</a></li>
-        <li class="pagination-item"><a href="#">5</a></li>
-        <li class="pagination-control"><a href="#"><span class="visually-hidden">Вперед</span></a></li>
-      </ul>
+      <div class="container">
+        <ul class="pagination-list">
+          <li class="pagination-control pagination-control-left disabled"><a><span class="visually-hidden">Назад</span></a></li>
+          <li class="pagination-item pagination-item-curent"><a><span class="visually-hidden">Текущая страница:</span>1</a></li>
+          <li class="pagination-item"><a href="#">2</a></li>
+          <li class="pagination-item"><a href="#">3</a></li>
+          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#">5</a></li>
+          <li class="pagination-control"><a href="#"><span class="visually-hidden">Вперед</span></a></li>
+        </ul>
+      </div>
     </main>
     
     <footer class="footer-wrapper container">
@@ -408,8 +410,8 @@
       
       <ul class="footer-menu">
         <li><a class="show-hover-white underline" href="#">Для поставщиков</a></li>
-        <li><a class="show-hover-white underline" href="#">О производстве</a></li>
         <li><a class="show-hover-white underline" href="#">Наши документы</a></li>
+        <li><a class="show-hover-white underline" href="#">О производстве</a></li>
         <li><a class="show-hover-white underline" href="#">Экологические стандарты</a></li>
       </ul>
       
@@ -418,7 +420,7 @@
           <img src="img-png/logo-htmlacademy.png" width="108" height="39" alt="HTML Academy">
         </a>
           
-        <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> 2017</p>
+        <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> © 2017</p>
       </div>
     </footer>
   </body>

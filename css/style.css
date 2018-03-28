@@ -105,7 +105,7 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  min-height: 90px;
+  min-height: 85px;
   position: relative;
   padding-bottom: 40px;
 }
@@ -606,7 +606,7 @@ input[type="radio"].visually-hidden {
   position: absolute;
   margin: 0;
   padding: 0;
-  bottom: -25px;
+  bottom: -30px;
   right: 27px;
   font-size: 14px;
   line-height: 16px;
@@ -807,7 +807,7 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   flex-basis: 267px;
   position: relative;
-  margin-bottom: 40px;
+  margin-bottom: 31px;
   padding: 6px 13px 0px 13px;
 }
 
@@ -835,8 +835,8 @@ input[type="radio"].visually-hidden {
 .catalog-price {
   position: absolute;
   margin: 0;
-  top: 210px;
-  left: 13;
+  top: 214px;
+  left: 11;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -892,7 +892,7 @@ input[type="radio"].visually-hidden {
   background-position: top center;
   margin-bottom: 40px;
   box-sizing: border-box;
-  padding: 22px 30px 28px 20px;
+  padding: 22px 30px 25px 20px;
   border-radius: 15px;
 }
 
@@ -1035,7 +1035,7 @@ input[type="radio"].visually-hidden {
 
 .spam-btn {
   margin-left: 6px;
-  padding: 10px 18px 11px 15px;
+  padding: 10px 21px 11px 15px;
 }
   /* Разобраться
   background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
@@ -1057,7 +1057,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
   width: 305px;
   height: 305px;
-  padding: 30px 25px 30px 25px;
+  padding: 27px 25px 30px 25px;
   color: #323232;
   background-color: #fefefe;
   border-radius: 15px;
@@ -1079,9 +1079,13 @@ input[type="radio"].visually-hidden {
   font-weight: 700;
 }
 
-.contact .text-2 {
-  padding-top: 15px;
+.contact .contact-text-2 {
+  padding-top: 19px;
   padding-bottom: 25px;
+}
+
+.contact-text-2 b {
+  padding-top: 5px;
 }
 
 .contact-btn {
@@ -1093,8 +1097,11 @@ input[type="radio"].visually-hidden {
 
 /*стилизация особенностей страницы каталога Сливочное*/
 .page-title {
-  margin-top: 15px;
-  margin-bottom: 30px;
+  font-size: 35px;
+  line-height: 41px;
+  font-weight: 700;
+  margin-top: 2px;
+  margin-bottom: 23px;
 }
 
 .breadcrumbs {
@@ -1102,6 +1109,7 @@ input[type="radio"].visually-hidden {
   justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
+  margin-top: 10px;
 }
 
 .breadcrumbs a {
@@ -1122,12 +1130,16 @@ input[type="radio"].visually-hidden {
   left: 6px;
 }
 
+.filter {
+  margin-bottom: 33px;
+}
+
 .filter-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-end;
-  width: 857px;
+  width: 860px;
   margin-bottom: 15px;
 }
 
@@ -1157,7 +1169,7 @@ input[type="radio"].visually-hidden {
   -webkit-appearance: none;
   background-image: url("../img-svg/icon-down%20white.svg");
   background-repeat: no-repeat;
-  background-position: right 15px top 13px;
+  background-position: right 16px top 12px;
 }
 
 .filter .sort:hover {
@@ -1190,12 +1202,16 @@ input[type="radio"].visually-hidden {
 .fat-block label,
 .filler-block label {
   position: relative;
-  padding-left: 32px;
+  padding-left: 30px;
   padding-right: 15px;
   cursor: pointer;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+}
+
+.filler-block label {
+  padding-right: 19px;
 }
 
 .range-block {
@@ -1259,11 +1275,11 @@ input[type="radio"].visually-hidden {
 
 .filter-row-filler input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
-  top: -3px;
+  top: 0px;
   left: 0px;
   
-  width: 19px;
-  height: 19px;
+  width: 17px;
+  height: 17px;
   
   border: 2px solid #ffffff;
   border-radius: 3px;
@@ -1282,6 +1298,7 @@ input[type="radio"].visually-hidden {
 
 .filter-row-filler input[type="checkbox"]:checked + .checkbox-indicator {
   border: 2px solid transparent;
+  top: -2px;
 }
 
 /*TODO разобраться!!!*/
@@ -1308,7 +1325,7 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-filter {
-  padding: 7px 26px 7px 26px;
+  padding: 7px 27px 7px 27px;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
@@ -1333,8 +1350,13 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-list {
+  padding: 0;
+  margin: 0;
+  margin-top: 40px;
+  margin-bottom: 28px;
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
 }
@@ -1374,20 +1396,23 @@ input[type="radio"].visually-hidden {
 }
 
 .pagination-control {
-  padding: 10px;
-  background-image: url("../img-png/paginator.png");
-  background-repeat: no-repeat;
-  background-position: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 15px;
 }
 
 .pagination-control a {
   display: block;
-  width: 25px;
+  width: 9px;
   height: 25px;
+  background-image: url("../img-png/paginator.png");
+  background-repeat: no-repeat;
+  background-position: 0 5px;
 }
 
-.pagination-control.left {
+.pagination-control-left a{
   transform: rotate(180deg);
+  margin-right: 15px;
 }
 
 .pagination-control.disabled {
@@ -1403,7 +1428,7 @@ input[type="radio"].visually-hidden {
 .footer-social {
   display: flex;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 29px;
   padding: 0;
   list-style: none;
   width: 267px;
@@ -1413,7 +1438,7 @@ input[type="radio"].visually-hidden {
   display: block;
   width: 32px;
   height: 32px;
-  margin-right: 12px;
+  margin-right: 14px;
   opacity: 0.8;
   background-repeat: no-repeat;
   background-position: center;
@@ -1449,7 +1474,7 @@ input[type="radio"].visually-hidden {
   position: relative;
   flex-wrap: wrap;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 23px;
   margin-bottom: 30px;
   margin-right: 70px;
   padding: 0;
@@ -1477,9 +1502,10 @@ input[type="radio"].visually-hidden {
   position: absolute;
   width: 15px;
   height: 13px;
-  left: 5px;
+  left: 7px;
   top: 5px;
   background-image: url("../img-svg/heart.svg");
+  background-repeat: no-repeat;
 }
 
 .footer-menu li:nth-of-type(2n-1){
@@ -1494,7 +1520,7 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
-  margin-top: 7px;
+  margin-top: 10px;
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
