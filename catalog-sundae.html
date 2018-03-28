@@ -41,22 +41,25 @@
               </svg>
             </a>
                   <!--Форма для поиска-->
-            <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <label for="search-id" class="visually-hidden">Поиск по сайту</label>
-              <input type="search" name="search" id="search-id" placeholder="Что ищем?" required>
-            </form>
+            <div class="wrapper-form">
+              <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="post">
+                <label for="search-id" class="visually-hidden">Поиск по сайту</label>
+                <input type="search" name="search" id="search-id" placeholder="Что ищем?" required>
+              </form>
+            </div>
           </li>
           <li class="login-link-item">
             <a class="login-link" href="#">
               <span>Вход</span>
-                <svg width="21" height="19" viewBox="0 0 21 19">
-                  <g fill="#fff">
-                    <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
-                    <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
-                  </g>
-                </svg>
-              </a>
+              <svg width="21" height="19" viewBox="0 0 21 19">
+                <g fill="#fff">
+                  <path d="M6 14.875L12.917 9.5 6 4.125v2.917H-.042v4.917H6z"/>
+                  <path d="M18 0H5C3.9 0 3 .9 3 2v2h2V2h13v15H5v-2H3v2c0 1.1.9 2 2 2h13c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/>
+                </g>
+              </svg>
+            </a>
                           <!--Форма входа-->
+            <div class="wrapper-form">
               <form class="login-link-form" name="login-link-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="email-login-link" class="visually-hidden">Электронная почта</label>
                 <input class="email" type="email" name="email" id="email-login-link" placeholder="Электронная почта" required>
@@ -66,36 +69,39 @@
                 <a class="remember show-hover" href="#">Забыли пароль?</a>
                 <a class="registration show-hover" href="#">Новая регистрация</a>
               </form>
-            </li>
+            </div>
+          </li>
           <li class="basket-active">
             <a href="#">
               <span class="visually-hidden">Корзина</span>
               <span>2 товара</span>
             </a>
                   <!--Корзина-->
-            <section class="basket-table">
-              <h2 class="visually-hidden">Ваш заказ</h2>
-              <table>
-                <tr class="basket-table-row">
-                  <td class="basket-table-item"><button class="close-btn-little"><span class="visually-hidden">Убрать из списка</span></button></td>
-                  <td class="basket-table-item"><img src="img-png/catalog-item-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
-                  <td class="basket-table-item">Пломбир с апельсиновым джемом</td>
-                  <td class="basket-table-item">1,5 кг × <span class="basket-table-price">200 руб.</span></td>
-                  <td class="basket-table-item">300 руб.</td>
-                </tr>
-                <tr  class="basket-table-row">
-                  <td class="basket-table-item"><button class="close-btn-little"><span class="visually-hidden">Убрать из списка</span></button></td>
-                  <td class="basket-table-item"><img src="img-png/catalog-item-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
-                  <td class="basket-table-item">Клубничный пломбир с присыпкой из белого шоколада</td>
-                  <td class="basket-table-item">1,5 кг × <span class="basket-table-price">300 руб.</span></td>
-                  <td class="basket-table-item">450 руб.</td>
-                </tr>
-                <tr>
-                  <td class="basket-table-sum" colspan="5">Итого: 750 руб.</td>
-                </tr>
-              </table>
-              <a class="btn basket-table-btn" href="#">Оформить заказ</a>
-            </section>
+            <div class="wrapper-form">
+              <section class="basket-table">
+                <h2 class="visually-hidden">Ваш заказ</h2>
+                <table>
+                  <tr class="basket-table-row">
+                    <td class="basket-table-item"><button class="close-btn-little"><span class="visually-hidden">Убрать из списка</span></button></td>
+                    <td class="basket-table-item"><img src="img-png/catalog-item-1.png" width="33" height="33" alt="Пломбир с апельсиновым джемом"></td>
+                    <td class="basket-table-item">Пломбир с апельсиновым джемом</td>
+                    <td class="basket-table-item">1,5 кг × <span class="basket-table-price">200 руб.</span></td>
+                    <td class="basket-table-item">300 руб.</td>
+                  </tr>
+                  <tr  class="basket-table-row">
+                    <td class="basket-table-item"><button class="close-btn-little"><span class="visually-hidden">Убрать из списка</span></button></td>
+                    <td class="basket-table-item"><img src="img-png/catalog-item-3.png" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада"></td>
+                    <td class="basket-table-item">Клубничный пломбир с присыпкой из белого шоколада</td>
+                    <td class="basket-table-item">1,5 кг × <span class="basket-table-price">300 руб.</span></td>
+                    <td class="basket-table-item">450 руб.</td>
+                  </tr>
+                  <tr>
+                    <td class="basket-table-sum" colspan="5">Итого: 750 руб.</td>
+                  </tr>
+                </table>
+                <a class="btn basket-table-btn" href="#">Оформить заказ</a>
+              </section>
+            </div>
           </li>
         </ul>
       </section>
@@ -408,8 +414,8 @@
       </ul>
       
       <div class="footer-copyright">
-        <a a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-          <img src="img-png/logo-htmlacademy.png" width="108px" height="39px" alt="HTML Academy">
+        <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img-png/logo-htmlacademy.png" width="108" height="39" alt="HTML Academy">
         </a>
           
         <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> 2017</p>

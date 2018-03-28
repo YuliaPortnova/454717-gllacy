@@ -269,8 +269,8 @@
         </ul>
 
         <div class="footer-copyright">
-          <a a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
-            <img src="img-png/logo-htmlacademy.png" width="108px" height="39px" alt="HTML Academy">
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
+            <img src="img-png/logo-htmlacademy.png" width="108" height="39" alt="HTML Academy">
           </a>
 
           <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> 2017</p>
@@ -280,12 +280,13 @@
     </div>
         <!--Форма обратной связи-->
     <section class="modal-feedback">
+      <h2 class="visually-hidden">Форма обратной связи</h2>
       <form class="feedback-form" name="feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <p>Мы обязательно вам ответим!</p>
         <label for="feedback-form-name" class="visually-hidden">Как вас зовут?</label>
-        <input class="name" type="name" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
-        <label class="visually-hidden">Ваша почта для ответа?</label>
-        <input for="feedback-form-email" class="email" type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
+        <input class="name" type="text" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
+        <label for="feedback-form-email" class="visually-hidden">Ваша почта для ответа?</label>
+        <input class="email" type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?" required>
         <label for="feedback-form-feedback" class="visually-hidden">Ваше сообщение</label>
         <textarea class="feedback" name="feedback" id="feedback-form-feedback" rows="5" placeholder="Напишите что-нибудь..." required></textarea>
         <input class="btn feedback-btn" type="submit" value="Отправить">
