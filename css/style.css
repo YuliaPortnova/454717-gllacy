@@ -784,6 +784,7 @@ input[type="radio"].visually-hidden {
 
 .promo-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   padding: 0;
 }
@@ -811,6 +812,15 @@ input[type="radio"].visually-hidden {
   padding: 6px 13px 0px 13px;
 }
 
+.catalog-item:hover figure {
+  position: relative;
+  z-index: 2;
+}
+
+.catalog-item:hover .catalog-price {
+  z-index: 2;
+}
+
 .catalog-item figure {
   margin: 0;
   padding: 0;
@@ -818,6 +828,8 @@ input[type="radio"].visually-hidden {
 
 .catalog-item figcaption {
   padding-top: 8px;
+  padding-left: 5px;
+  padding-right: 5px;
   font-weight: 500;
   text-align: center;
 }
@@ -830,6 +842,7 @@ input[type="radio"].visually-hidden {
   top: 6px;
   left: 13px;
   background-image: url("../img-svg/hit.svg");
+  z-index: 3;
 }
 
 .catalog-price {
@@ -857,13 +870,6 @@ input[type="radio"].visually-hidden {
   padding-right: 15px;
 }
 
-.catalog-item:hover,
-.catalog-item:focus {
-  background-color: rgba(255, 255, 255, 0.2);
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
 .catalog-item .btn-hidden {
   display: none;
 }
@@ -875,11 +881,11 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   right: 0;
   left: 0;
-  padding-top: 10px;
+  top: 0;
+  padding-top: 120%;
   padding-bottom: 20px;
   background-color: rgba(255, 255, 255, 0.2);
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   text-align: center;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
@@ -957,6 +963,7 @@ input[type="radio"].visually-hidden {
 
 .blog-spam {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-bottom: 40px;
 }
@@ -1106,6 +1113,7 @@ input[type="radio"].visually-hidden {
 
 .breadcrumbs {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
@@ -1427,6 +1435,7 @@ input[type="radio"].visually-hidden {
 
 .footer-social {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   margin-top: 29px;
   padding: 0;
@@ -1538,7 +1547,7 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback {
   display: none;
-  z-index: 3;
+  z-index: 5;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -1573,7 +1582,7 @@ input[type="radio"].visually-hidden {
 
 .modal-overlay {
   display: none;
-  z-index: 2;
+  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -1621,7 +1630,8 @@ input[type="radio"].visually-hidden {
 }
 
 .feedback-form input[type="text"]::placeholder,
-.feedback-form input[type="email"]::placeholder {
+.feedback-form input[type="email"]::placeholder,
+.feedback-form textarea::placeholder {
   color: #999999;
 }
 
