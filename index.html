@@ -12,6 +12,7 @@
     <input class="visually-hidden" type="radio" id="product-2" name="toggle">
     <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="site-wrapper">
+      
       <header class="main-header container">
         <section class="main-navigation">
           <h2 class="visually-hidden">Главное меню</h2>
@@ -23,18 +24,31 @@
               <li class="main-menu">
                 <a class="main-menu-catalog" href="#">Каталог</a>
                 <ul class="catalog-menu">
-                  <li class="catalog-menu-new"><a href="#">Новинки</a></li>
-                  <li><a href="catalog-sundae.html">Сливочное</a></li>
-                  <li><a href="#">Щербеты</a></li>
-                  <li><a href="#">Фруктовый лед</a></li>
-                  <li><a href="#">Мелорин</a></li>
+                  <li class="catalog-menu-new">
+                    <a href="#">Новинки</a>
+                  </li>
+                  <li>
+                    <a href="catalog-sundae.html">Сливочное</a>
+                  </li>
+                  <li>
+                    <a href="#">Щербеты</a>
+                  </li>
+                  <li>
+                    <a href="#">Фруктовый лед</a>
+                  </li>
+                  <li>
+                    <a href="#">Мелорин</a>
+                  </li>
                 </ul>
               </li>
-              <li class="main-menu"><a href="#">Доставка и оплата</a></li>
-              <li class="main-menu"><a href="#">О Компании</a></li>
+              <li class="main-menu">
+                <a href="#">Доставка и оплата</a>
+              </li>
+              <li class="main-menu">
+                <a href="#">О Компании</a>
+              </li>
             </ul>
           </nav>
-      
           <ul class="user-navigation">
             <li class="search-item">
               <a href="#">
@@ -48,7 +62,7 @@
               <div class="wrapper-form">
                 <form class="search-form" name="search-form" action="https://echo.htmlacademy.ru" method="post">
                   <label for="search-id" class="visually-hidden">Поиск по сайту</label>
-                  <input type="search" name="search" id="search-id" placeholder="Что ищем?" required>
+                  <input type="text" name="search" id="search-id" placeholder="Что ищем?" required>
                 </form>
               </div>
             </li>
@@ -83,11 +97,13 @@
             </li>
           </ul>
         </section>
-        <p class="tel">С 10 до 20, ежедневно<b>8 812 450-25-25</b></p>
+        <p class="tel">
+          С 10 до 20, ежедневно
+          <b>8 812 450-25-25</b>
+        </p>
       </header>
 
       <main>
-
         <h1 class="visually-hidden">Магазин по продаже мороженого GllacyShop</h1>
 
         <section class="slider container">
@@ -123,8 +139,7 @@
           <ul class="promo-wrapper">
             <li class="promo-item">
               <h3>Малинка даром!</h3>
-              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.
-              </p>
+              <p>При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
               <a href="#" class="btn promo-btn">Хочу варенье!</a>
             </li>
             <li class="promo-item">
@@ -201,7 +216,6 @@
           </ul>
         </section>
 
-        
         <section class="features container">     
           <h2 class="visually-hidden">Преимущества</h2>
           <p>Магазин Глэйси — это онлайн- и офлайн-магазин по продаже мороженого собственного производства на развес</p>
@@ -231,7 +245,7 @@
           <section class="spam">
             <div class="spam-wrapper">
               <h2 class="visually-hidden">Рассылка</h2>
-              <p class="spam-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =) </p>
+              <p class="spam-text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
               <form name="spam-form" action="https://echo.htmlacademy.ru" method="post">
                 <label for="spam-form-email" class="visually-hidden">Электронная почта</label>
                 <input class="email" type="email" name="email" id="spam-form-email" placeholder="Электронная почта" required>
@@ -247,36 +261,65 @@
           <iframe class="map-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5990037349977!2d30.321732489117814!3d59.93879585156386!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2sBolshaya+Konyushennaya+Street%2C+19%2C+Sankt-Peterburg%2C+191186!5e0!3m2!1sen!2sru!4v1522317524189" width="1200" height="430" frameborder="0" style="border:0" allowfullscreen></iframe>
           <section class="contact">
             <h2 class="visually-hidden">Адрес и телефон</h2>
-            <p class="contact-text-1">Адрес главного офиса и офлайн-магазина:</p><b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
-            <p class="contact-text-2">Для заказов по телефону: <b>8 812 450-25-25</b>(с 10 до 20 ежедневно)</p>
+            <p class="contact-text-1">Адрес главного офиса и офлайн-магазина:</p>
+            <b>ул. Большая Конюшенная 19/8, Санкт-Петербург</b>
+            <p class="contact-text-2">
+              Для заказов по телефону:
+              <b>8 812 450-25-25</b>
+              (с 10 до 20 ежедневно)
+            </p>
             <a class="btn contact-btn" href="#">Форма обратной связи</a>
           </section>
         </section>
-
       </main>
 
       <footer class="footer-wrapper container">
         <ul class="footer-social">
-          <li class="social-item"><a href="#"><span class="visually-hidden">Твиттер</span></a></li>
-          <li class="social-item"><a href="#"><span class="visually-hidden">Инстаграм</span></a></li>
-          <li class="social-item"><a href="#"><span class="visually-hidden">Фейсбук</span></a></li>
-          <li class="social-item"><a href="#"><span class="visually-hidden">Вконтакте</span></a></li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="#">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
         </ul>
-
         <ul class="footer-menu">
-          <li><a class="show-hover-white underline" href="#">Для поставщиков</a></li>
-          <li><a class="show-hover-white underline" href="#">Наши документы</a></li>
-          <li><a class="show-hover-white underline" href="#">О производстве</a></li>
-          <li><a class="show-hover-white underline" href="#">Экологические стандарты</a></li>
+          <li>
+            <a class="show-hover-white underline" href="#">Для поставщиков</a>
+          </li>
+          <li>
+            <a class="show-hover-white underline" href="#">Наши документы</a>
+          </li>
+          <li>
+            <a class="show-hover-white underline" href="#">О производстве</a>
+          </li>
+          <li>
+            <a class="show-hover-white underline" href="#">Экологические стандарты</a>
+          </li>
         </ul>
-
         <div class="footer-copyright">
           <a class="logo-htmlacademy" href="https://htmlacademy.ru/intensive/htmlcss">
             <img src="img-png/logo-htmlacademy.png" width="108" height="39" alt="HTML Academy">
           </a>
-
-          <p>Сделано в <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss"> HTML Academy</a> © 2017</p>
-          
+          <p>
+            Сделано в 
+            <a class="show-hover-white underline" href="https://htmlacademy.ru/intensive/htmlcss">
+            HTML Academy</a>
+            © 2017
+          </p>
         </div>
       </footer>
     </div>
@@ -293,40 +336,12 @@
         <textarea class="feedback" name="feedback" id="feedback-form-feedback" rows="5" placeholder="Напишите что-нибудь..."></textarea>
         <input class="btn feedback-btn" type="submit" value="Отправить">
       </form>
-      <button class="close-btn" type="button"><span class="visually-hidden">Закрыть</span></button>
+      <button class="close-btn" type="button">
+        <span class="visually-hidden">Закрыть</span>
+      </button>
     </section>
     <div class="modal-overlay"></div>
     
-    <script>
-      var popup_btn = document.querySelector(".contact-btn");
-      var popup = document.querySelector(".modal-feedback");
-      var close = popup.querySelector(".close-btn");
-      var overlay = document.querySelector(".modal-overlay");
-      var form = popup.querySelector("form");
-      var email = popup.querySelector("[name=email]");
-      var feedback = popup.querySelector("[name=feedback]");
-      
-      popup_btn.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal-show");
-        overlay.classList.add("modal-show-overlay");
-      });
-      
-      close.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.remove("modal-show");
-        overlay.classList.remove("modal-show-overlay");
-        popup.classList.remove("modal-error");
-      });
-      
-      form.addEventListener("submit", function (evt) {
-        if (!email.value || !feedback.value) {
-          evt.preventDefault();
-          popup.classList.remove("modal-error");
-          popup.offsetWidth = popup.offsetWidth;
-          popup.classList.add("modal-error");
-        } 
-      })
-    </script>
+    <script src="/js/scripts.js"></script>
   </body>
 </html>
