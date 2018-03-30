@@ -1,12 +1,11 @@
 html,
 body {
-  margin: 0;
   min-height: 100vh;
+  margin: 0;
 }
 
 body {
   padding: 0;
-  
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
   line-height: 22px;
@@ -25,19 +24,16 @@ img {
 
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="radio"].visually-hidden,
+.visually-hidden-active:not(:focus):active {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-
+  border: 0;
   white-space: nowrap;
-
   -webkit-clip-path: inset(100%);
-
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -46,7 +42,6 @@ input[type="radio"].visually-hidden {
 .btn {
   display: inline-block;
   padding: 12px 44px;
-  
   font: inherit;
   font-weight: 700;
   font-size: 18px;
@@ -56,8 +51,8 @@ input[type="radio"].visually-hidden {
   vertical-align: top;
   text-decoration: none;
   text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
-  
   background-color: #e84d37;
+  border: none;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f26843), to(#e74a35));
   background-image: -webkit-linear-gradient(top, #f26843 0%, #e74a35 100%);
   background-image: -o-linear-gradient(top, #f26843 0%, #e74a35 100%);
@@ -65,23 +60,20 @@ input[type="radio"].visually-hidden {
   border-radius: 50px;
   -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
           box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 0.64);
-  border: none;
-  
   cursor: pointer;
 }
 
 .btn:hover,
 .btn:focus {
-  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
   background-color: #f07b64;
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
-          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#f58669), to(#ec6f5e));
   background-image: -webkit-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background-image: -o-linear-gradient(top, #f58669 0%, #ec6f5e 100%);
   background-image: linear-gradient(to bottom, #f58669 0%, #ec6f5e 100%);
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+          box-shadow: 0px 2px 2px 0px rgba(172, 16, 0, 1);
+  text-shadow: 0px 2px 5px rgba(160, 32, 11, 0.76);
 }
-
 
 .btn:active { 
   background-color: #db543a;
@@ -96,12 +88,11 @@ input[type="radio"].visually-hidden {
 
 .site-wrapper {
   min-width: 940px;
+  min-height: 100vh;
   background-color: #849d8f;
   background-image: url("../img-png/slider-1.png");
   background-repeat: no-repeat;
   background-position: top center;
-  
-  min-height: 100vh;
 }
 
 .site-wrapper::before,
@@ -119,8 +110,8 @@ input[type="radio"].visually-hidden {
 }
 
 .main-header {
-  min-height: 85px;
   position: relative;
+  min-height: 85px;
   padding-bottom: 40px;
 }
 
@@ -131,11 +122,10 @@ input[type="radio"].visually-hidden {
 .site-navigation,
 .user-navigation,
 .catalog-menu {
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
-
 
 .site-navigation{
   margin-top: 27px;
@@ -160,11 +150,11 @@ input[type="radio"].visually-hidden {
 
 .main-menu > a:not(.current)::after {
   content: "";
-  height: 1px;
-  position: absolute;
-  bottom: 7px;
+  position: absolute; 
+  right: 14px;  
   left: 14px;
-  right: 14px;
+  bottom: 7px;
+  height: 1px;
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -216,16 +206,16 @@ input[type="radio"].visually-hidden {
 
 .catalog-menu a {
   display: block;
-  font-size: 14px;
-  line-height: 16px;
-  color: #323232;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   height: 28px;
-  font-weight: 400;
-  padding: 5px 20px 5px 21px;
   margin-top: 5px;
   margin-bottom: 5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; 
+  padding: 5px 20px 5px 21px;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #323232;
 }
 
 .catalog-menu a:hover {
@@ -259,13 +249,13 @@ input[type="radio"].visually-hidden {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 260px;
+  margin-top: 23px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;/*возможно временно*/
+          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  margin-top: 23px;
 }
 
 .user-navigation a{
@@ -355,8 +345,8 @@ input[type="radio"].visually-hidden {
 }
 
 .login-link {
-  position: relative;
   display: block;
+  position: relative;
   margin-right: 4px;
   padding-top: 8px;
   padding-bottom: 8px;
@@ -379,8 +369,8 @@ input[type="radio"].visually-hidden {
 }
 
 .basket-disabled a {
-  position: relative;
   display: block;
+  position: relative;
   padding-top: 8px;
   padding-bottom: 8px;
   padding-left: 45px;
@@ -391,10 +381,10 @@ input[type="radio"].visually-hidden {
 .basket-disabled a::before {
   content: "";
   position: absolute;
-  width: 21px;
-  height: 20px;
   top: 6px;
   left: 15px;
+  width: 21px;
+  height: 20px;
   background-image: url("../img-svg/basket.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -405,23 +395,21 @@ input[type="radio"].visually-hidden {
 }
 
 .basket-active > a {
-  position: relative;
   display: block;
+  position: relative;
   padding: 8px 15px 8px 45px;
+  color: #323232;
+  background-color: #f7f6f3;
   border-radius: 20px;
-  color: #323232;
-  background-color: #f7f6f3;
-  color: #323232;
-  background-color: #f7f6f3;
 }
 
 .basket-active > a::before {
   content: "";
   position: absolute;
-  width: 21px;
-  height: 20px;
   top: 6px;
   left: 15px;
+  width: 21px;
+  height: 20px;
   background-image: url("../img-svg/basket-red.svg");
   background-repeat: no-repeat;
   background-position: 0 0;
@@ -431,20 +419,19 @@ input[type="radio"].visually-hidden {
   display: none;
   position: absolute;
   z-index: 1;
+  top: 30px;
+  right: -5px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 540px;
   height: 242px;
-  padding: 8px 15px 31px 12px;
   margin: 5px;
-  top: 30px;
-  right: -5px;
-  border-radius: 6px;
-  
-  color: #323232;
-  background-color: #f8f7f4;
+  padding: 8px 15px 31px 12px;
   font-size: 13px;
   line-height: 16px;
+  color: #323232;
+  background-color: #f8f7f4;
+  border-radius: 6px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
@@ -457,18 +444,18 @@ input[type="radio"].visually-hidden {
   position: relative;
   width: 11px;
   height: 11px;
-  border: none;
-  background-color: transparent;
   margin-right: 9px;
+  background-color: transparent;
+  border: none;
 }
 
 .close-btn-little::before {
   content: "";
-  width: 13px;
-  height: 1px;
   position: absolute;
   top: 5px;
   left: 1px;
+  width: 13px;
+  height: 1px;
   background-color: #231f20;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -477,11 +464,11 @@ input[type="radio"].visually-hidden {
 
 .close-btn-little::after {
   content: "";
-  width: 13px;
-  height: 1px;
   position: absolute;
   top: 5px;
   left: 1px;
+  width: 13px;
+  height: 1px;
   background-color: #231f20;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
@@ -489,15 +476,15 @@ input[type="radio"].visually-hidden {
 }
 
 .basket-table-item:nth-child(1) {
-  vertical-align: top;
   padding-top: 16px;
+  vertical-align: top;
 }
 
 .basket-table-item:nth-child(2) {
   width: 43px;
   height: 33px;
+  padding-top: 10px;
   vertical-align: top;
-  padding-top: 10px
 }
 
 .basket-table-item:nth-child(3) {
@@ -529,12 +516,12 @@ input[type="radio"].visually-hidden {
 
 .basket-table-sum {
   border-top: 1px solid #cacac7;
-  text-align: right;
   padding-top: 13px;
   padding-bottom: 13px;
   font-size: 15px;
   line-height: 18px;
   font-weight: 700;
+  text-align: right;
 }
 
 .basket-active .basket-table-btn {
@@ -570,19 +557,19 @@ input[type="radio"].visually-hidden {
 }
 
 .search-form input[type="text"] {
-  padding: 9px 15px 10px 15px;
   width: 280px;
-  border-radius: 10px;
+  padding: 9px 15px 10px 15px;
   font: inherit;
-  border: 1px solid #d3d3d2;
   font-size: 14px;
   line-height: 24px;
+  border: 1px solid #d3d3d2;
   color: #323232;
+  border-radius: 10px;
 }
 
 .search-form input[type="text"]:hover {
   -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
-  box-shadow: inset 0 0 0 1px #c7c6c5;
+          box-shadow: inset 0 0 0 1px #c7c6c5;
   border-color: #c7c6c5;
 }
 
@@ -593,7 +580,7 @@ input[type="radio"].visually-hidden {
 .search-form input[type="text"]:active,
 .search-form input[type="text"]:focus {
   -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
-  box-shadow: inset 0 0 0 1px #8fbdec;
+          box-shadow: inset 0 0 0 1px #8fbdec;
   border-color: #8fbdec;
 }
 
@@ -621,12 +608,12 @@ input[type="radio"].visually-hidden {
 .login-link-form {
   display: none;
   position: absolute;
+  top: 35px;
+  right: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 277px;
   min-height: 214px;
-  top: 35px;
-  right: 0;
   padding: 20px 17px 22px 19px;
   border-radius: 6px;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
@@ -635,10 +622,10 @@ input[type="radio"].visually-hidden {
 
 .login-link-form input[type="email"],
 .login-link-form input[type="password"] {
-  margin-bottom: 20px;
   width: 240px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  margin-bottom: 20px;
   padding: 9px 15px;
   font: inherit;
   font-size: 14px;
@@ -689,9 +676,9 @@ input[type="radio"].visually-hidden {
 
 .login-link-form input[type="email"]:hover,
 .login-link-form input[type="password"]:hover {
-  -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
-  box-shadow: inset 0 0 0 1px #c7c6c5;
   border-color: #c7c6c5;
+  -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
+          box-shadow: inset 0 0 0 1px #c7c6c5;
 }
 
 .login-link-form input[type="email"],
@@ -703,17 +690,17 @@ input[type="radio"].visually-hidden {
 .login-link-form input[type="password"]:active,
 .login-link-form input[type="email"]:focus,
 .login-link-form input[type="password"]:focus {
-  -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
-  box-shadow: inset 0 0 0 1px #8fbdec;
   border-color: #8fbdec;
+  -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
+          box-shadow: inset 0 0 0 1px #8fbdec;
 }
 
 .tel {
   position: absolute;
+  right: 27px; 
+  bottom: -30px;
   margin: 0;
   padding: 0;
-  bottom: -30px;
-  right: 27px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 700;
@@ -732,13 +719,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider {
-  position: relative;
-  
+  position: relative; 
   margin-bottom: 40px;
   padding-top: 309px;
   padding-left: 0px;
   padding-right: 0px;
-  
   text-align: center;
   color: #ffffff;
 }
@@ -746,7 +731,6 @@ input[type="radio"].visually-hidden {
 .slider-list {
   margin: 0;
   padding: 0;
-  
   list-style: none;
 }
 
@@ -754,7 +738,6 @@ input[type="radio"].visually-hidden {
   width: 700px;
   margin: 0 auto;
   margin-bottom: 27px;
-  
   font-size: 60px;
   line-height: 60px;
   font-weight: 700;
@@ -762,10 +745,9 @@ input[type="radio"].visually-hidden {
 
 .slider-controls {
   position: absolute;
+  z-index: 1;
   bottom: 23px;
   left: 0;
-  z-index: 1;
-  
   font-size: 0;
 }
 
@@ -774,9 +756,7 @@ input[type="radio"].visually-hidden {
   width: 17px;
   height: 17px;
   margin-right: 8px;
-  
   vertical-align: top;
-  
   background-color: transparent;
   border: 2px solid #ffffff;
   border-radius: 50%;
@@ -788,11 +768,11 @@ input[type="radio"].visually-hidden {
 }
 
 .slider-btn {
+  padding-right: 40px;
+  padding-left: 40px;
   font-size: 32px;
   line-height: 44px;
   font-weight: 700;
-  padding-right: 40px;
-  padding-left: 40px;
 }
 
 #product-1:checked ~ .site-wrapper {
@@ -822,11 +802,6 @@ input[type="radio"].visually-hidden {
   background-color: #ffffff;
 }
 
-/*.slider {
-  margin-bottom: 40px;
-}
-
-*/
 .promo {
    margin-bottom: 35px;
 }
@@ -842,8 +817,6 @@ input[type="radio"].visually-hidden {
   padding: 15px 21px 22px 19px;
   border-radius: 15px;
 }
-
-/*TODO может быть увеличить размер картинки, чтобы не появлялся фон при переполнении...?*/
 
 .promo-item:nth-of-type(1) {
   background-color: #761a2d;
@@ -912,9 +885,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 0; 
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
@@ -922,12 +894,13 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  list-style: none;
 }
 
 .catalog-item {
+  position: relative;
   -ms-flex-preferred-size: 267px;
       flex-basis: 267px;
-  position: relative;
   margin-bottom: 35px;
   padding: 6px 13px 0px 13px;
 }
@@ -957,19 +930,19 @@ input[type="radio"].visually-hidden {
 .catalog-list .hit::before {
   content: "";
   position: absolute;
-  width: 61px;
-  height: 61px;
+  z-index: 3;
   top: 5px;
   left: 13px;
+  width: 61px;
+  height: 61px;
   background-image: url("../img-svg/hit.svg");
-  z-index: 3;
 }
 
 .catalog-price {
   position: absolute;
-  margin: 0;
   top: 214px;
   left: 11;
+  margin: 0;
   text-shadow: 0px 1px 3px rgba(49, 50, 53, 0.5);
 }
 
@@ -999,9 +972,9 @@ input[type="radio"].visually-hidden {
   top: 0;
   padding-top: 346px;
   padding-bottom: 20px;
+  text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;
-  text-align: center;
   -webkit-box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
@@ -1012,15 +985,15 @@ input[type="radio"].visually-hidden {
 }
 
 .features {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-bottom: 40px;
+  padding: 27px 30px 23px 20px;
   color: #323232;
   background-color: #ede1c5;
   background-image: url("../img-jpg/waffle.jpg");
   background-repeat: repeat;
   background-position: top center;
-  margin-bottom: 40px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 27px 30px 23px 20px;
   border-radius: 15px;
 }
 
@@ -1032,7 +1005,6 @@ input[type="radio"].visually-hidden {
 }
 
 .features > ul {
-  list-style: none;
   margin: 0;
   padding: 0px;
   display: -webkit-box;
@@ -1040,13 +1012,14 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  list-style: none;
 }
 
 .features-item {
+  position: relative;
   -ms-flex-preferred-size: 545px;
       flex-basis: 545px;
   padding-right: 20px;
-  position: relative;
 } 
 
 .features-item:nth-child(2n) {
@@ -1064,10 +1037,10 @@ input[type="radio"].visually-hidden {
 .features-item::after {
   content: "";
   position: absolute;
-  width: 50px;
-  height: 50px;
   top: 9px;
   left: 0px;
+  width: 50px;
+  height: 50px;
   background-image: url("../img-png/features_sprites.png");
   background-repeat: no-repeat;
 }
@@ -1102,15 +1075,15 @@ input[type="radio"].visually-hidden {
 
 .blog {
   width: 560px;
+  min-height: 220px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; 
+  padding: 23px 250px 25px 19px;
   color: #323232;
   background-color: #ffffff;
   background-image: url("../img-png/strawberry.png");
   background-repeat: no-repeat;
   background-position: top center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 23px 250px 25px 19px;
-  min-height: 220px;
   border-radius: 15px;
 }
 
@@ -1129,28 +1102,28 @@ input[type="radio"].visually-hidden {
 }
 
 .spam {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   width: 560px;
+  padding: 5px 6px;
   color: #5a5a5a;
   background-color: #f8f7f4;
   background-image: url("../img-svg/spam.svg");
   background-repeat: no-repeat;
   background-position: top center;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  padding: 5px 6px;
   border-radius: 15px;
 }
 
 .spam-wrapper {
-  background-color: #f8f7f4;
-  border-radius: 15px;
   padding: 30px 16px 34px 20px; 
+  background-color: #f8f7f4;
+  border-radius: 15px;  
 }
 
 .spam-text {
-  padding: 0;
   margin: 0;
   margin-bottom: 35px;
+  padding: 0;
 }
 
 .spam input[type="email"] {
@@ -1163,9 +1136,9 @@ input[type="radio"].visually-hidden {
 }
 
 .spam input[type="email"]:hover {
+  border-color: #c7c6c5;
   -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
   box-shadow: inset 0 0 0 1px #c7c6c5;
-  border-color: #c7c6c5;
 }
 
 .spam input[type="email"] {
@@ -1174,22 +1147,19 @@ input[type="radio"].visually-hidden {
 
 .spam input[type="email"]:active,
 .spam input[type="email"]:focus {
+  border-color: #8fbdec;
   -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
   box-shadow: inset 0 0 0 1px #8fbdec;
-  border-color: #8fbdec;
 }
 
 .spam-btn {
   margin-left: 6px;
   padding: 10px 17px 11px 19px;
 }
-  /* Разобраться
-  background-image: repeating-linear-gradient(#f8f7f4 10px, #92cdff 10px, #f8f7f4 20px, #fe9e90 20px, #f8f7f4 30px);
-  */
 
 .map {
-  background-color: #989a93;
   position: relative;
+  background-color: #989a93;
 }
 
 .container-map {
@@ -1227,9 +1197,9 @@ input[type="radio"].visually-hidden {
 }
 
 .contact b {
-  padding: 0;
-  margin: 0;
   display: block;
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
@@ -1258,17 +1228,18 @@ input[type="radio"].visually-hidden {
 
 /*стилизация особенностей страницы каталога Сливочное*/
 .page-title {
+  margin-top: 2px;
+  margin-bottom: 23px;
   font-size: 35px;
   line-height: 41px;
   font-weight: 700;
-  margin-top: 2px;
-  margin-bottom: 23px;
 }
 
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: start;
@@ -1276,7 +1247,6 @@ input[type="radio"].visually-hidden {
           justify-content: flex-start;
   flex-wrap: wrap;
   list-style: none;
-  margin-top: 10px;
 }
 
 .breadcrumbs a {
@@ -1305,6 +1275,8 @@ input[type="radio"].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 860px;
+  margin-bottom: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: justify;
@@ -1313,8 +1285,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  width: 860px;
-  margin-bottom: 15px;
 }
 
 .filter-row-sort {
@@ -1333,26 +1303,26 @@ input[type="radio"].visually-hidden {
 }
 
 .filter .sort {
-  height: 35px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 35px;
+  padding: 6px 35px 7px 15px; 
   margin-top: 5px;
-  color: #ffffff;
+  color: #ffffff; 
   background-color: rgba(255, 255, 255, 0.2);
+  background-image: url("../img-svg/icon-down%20white.svg");
+  background-repeat: no-repeat;
+  background-position: right 16px top 12px;
   border: none;
   border-radius: 20px;
-  padding: 6px 35px 7px 15px;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
-  background-image: url("../img-svg/icon-down%20white.svg");
-  background-repeat: no-repeat;
-  background-position: right 16px top 12px;
 }
 
 .filter .sort::-ms-expand {
-    display: none;
+  display: none;
 }
 
 .filter .sort:hover {
@@ -1367,7 +1337,6 @@ input[type="radio"].visually-hidden {
   margin: 0;
   margin-bottom: 7px;
   padding-left: 15px;
-  
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1377,9 +1346,8 @@ input[type="radio"].visually-hidden {
 .filler-block {
   margin: 0;
   padding: 6px 0px 7px 15px;
-  border-radius: 20px;
-  
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
 }
 
 .fat-block label,
@@ -1387,10 +1355,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   padding-left: 30px;
   padding-right: 15px;
-  cursor: pointer;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 .filler-block label {
@@ -1404,18 +1372,18 @@ input[type="radio"].visually-hidden {
   height: 36px;
   margin: 0;
   padding: 8px 20px;
-  border-radius: 20px;
   background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
   cursor: pointer;
 }
 
 .range-block::before {
   content: "";
   position: absolute;
-  width: 176px;
-  height: 4px;
   top: 16px;
   left: 20px;
+  width: 176px;
+  height: 4px;
   background-color: #f8f7f4;
   opacity: 0.5;
 }
@@ -1423,10 +1391,10 @@ input[type="radio"].visually-hidden {
 .range-block::after {
   content: "";
   position: absolute;
-  width: 85px;
-  height: 4px;
   top: 16px;
   left: 52px;
+  width: 85px;
+  height: 4px;
   background-color: #f8f7f4;
   opacity: 1;
 }
@@ -1448,10 +1416,8 @@ input[type="radio"].visually-hidden {
   position: absolute;
   top: -3px;
   left: 0px;
-  
   width: 14px;
   height: 14px;
-  
   border: 4px solid #ffffff;
   border-radius: 50%;
   opacity: 0.8;
@@ -1464,11 +1430,9 @@ input[type="radio"].visually-hidden {
 .filter-row-filler input[type="checkbox"] + .checkbox-indicator {
   position: absolute;
   top: 0px;
-  left: 0px;
-  
+  left: 0px; 
   width: 17px;
   height: 17px;
-  
   border: 2px solid #ffffff;
   border-radius: 3px;
   opacity: 0.8;
@@ -1481,36 +1445,34 @@ input[type="radio"].visually-hidden {
 .filter-row-fat input[type="radio"]:checked + .radio-indicator::before {
   content: "";
   position: absolute;
+  top: 3px;
+  left: 3px;
   width: 8px;
   height: 8px;
   background-color: #ffffff;
-  top: 3px;
-  left: 3px;
   border-radius: 50%;
 }
 
 .filter-row-filler input[type="checkbox"]:checked + .checkbox-indicator {
-  border: 2px solid transparent;
   top: -2px;
+  border: 2px solid transparent;
 }
 
-/*TODO разобраться!!!*/
-
-.filter-row-filler input[type="checkbox"]:disabled ~ span,
-.filter-row-fat input[type="radio"]:disabled ~ span  {
+.filter-row-filler input[type="checkbox"]:disabled + .checkbox-indicator,
+.filter-row-fat input[type="radio"]:disabled + .radio-indicator {
   opacity: 0.4;
 }
 
 .filter-row-filler input[type="checkbox"]:checked + .checkbox-indicator::before {
   content: "";
   position: absolute;
+  top: -2px;
+  left: -2px;
   width: 27px;
   height: 23px;
   background-image: url("../img-svg/checkbox-on.svg");
   background-repeat: no-repeat;
   background-position: center;
-  top: -2px;
-  left: -2px;
 }
 
 .filter-row-filler {
@@ -1520,10 +1482,10 @@ input[type="radio"].visually-hidden {
 
 .btn-filter {
   padding: 7px 27px 7px 27px;
+  color: #ffffff;
   font-size: 16px;
   line-height: 18px;
   font-weight: 500;
-  color: #ffffff;
   background-color: rgba(255, 255, 255, 0.2);
   border: 2px solid #ffffff;
   border-radius: 20px;
@@ -1536,23 +1498,22 @@ input[type="radio"].visually-hidden {
 }
 
 .btn-filter:active {
+  padding: 9px 28px 9px 28px;
   color: #323232;
-  background-color: #eaeaea; 
+  background-color: #eaeaea;
+  border: none;
   -webkit-box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1); 
           box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
-  border: none;
-  padding: 9px 28px 9px 28px;
 }
 
 .pagination-list {
-  padding: 0;
-  margin: 0;
-  margin-top: 33px;
-  margin-bottom: 28px;
-  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  margin-top: 33px;
+  margin-bottom: 28px;
+   padding: 0;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-pack: end;
@@ -1561,16 +1522,13 @@ input[type="radio"].visually-hidden {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  list-style: none;
 }
 
-
 .pagination-item {
-  padding-right: 8px;
-  padding-left: 8px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  margin-left: 2px;
   margin-right: 2px;
+  margin-left: 2px;
+  padding: 2px 8px 2px 8px;
   border-radius: 50%;
 }
 
@@ -1588,12 +1546,12 @@ input[type="radio"].visually-hidden {
   color: #323232;
 }
 
-.pagination-item-curent{
+.pagination-item-curent {
   color: #323232;
   background-color: #ffffff;
 }
 
-.pagination-item-curent a{
+.pagination-item-curent a {
   color: #323232;
 }
 
@@ -1612,18 +1570,18 @@ input[type="radio"].visually-hidden {
   background-position: 0 5px;
 }
 
-.pagination-control-left a{
+.pagination-control-left a {
+  margin-right: 15px;
   -webkit-transform: rotate(180deg);
       -ms-transform: rotate(180deg);
           transform: rotate(180deg);
-  margin-right: 15px;
 }
 
 .pagination-control.disabled {
   opacity: 0.2;
 }
-
 /*окончание стилизации особенностей страницы каталога Сливочное*/
+
 .footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1639,11 +1597,11 @@ input[type="radio"].visually-hidden {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  width: 267px;
   margin: 0;
   margin-top: 31px;
   padding: 0;
   list-style: none;
-  width: 267px;
 }
 
 .social-item a {
@@ -1651,11 +1609,11 @@ input[type="radio"].visually-hidden {
   width: 32px;
   height: 32px;
   margin-right: 14px;
-  opacity: 0.8;
   background-repeat: no-repeat;
   background-position: center;
   border: 2px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
+  opacity: 0.8;
 }
 
 .social-item:nth-child(1) a {
@@ -1688,13 +1646,10 @@ input[type="radio"].visually-hidden {
   position: relative;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin: 0;
-  margin-top: 25px;
-  margin-bottom: 30px;
-  margin-right: 70px;
+  width: 370px;
+  margin: 25px 70px 30px 0px;
   padding: 0;
   list-style: none;
-  width: 370px;
 }
 
 .footer-menu a {
@@ -1717,10 +1672,10 @@ input[type="radio"].visually-hidden {
 .footer-menu li:nth-of-type(1)::before {
   content: "";
   position: absolute;
-  width: 15px;
-  height: 13px;
   left: 7px;
   top: 5px;
+  width: 15px;
+  height: 13px;
   background-image: url("../img-svg/heart.svg");
   background-repeat: no-repeat;
 }
@@ -1741,11 +1696,11 @@ input[type="radio"].visually-hidden {
 }
 
 .footer-copyright {
+  width: 190px;
   margin-top: 12px;
   color: #fefefe;
   font-size: 12px;
   line-height: 18px;
-  width: 190px;
 }
 
 .footer-copyright p {
@@ -1759,17 +1714,17 @@ input[type="radio"].visually-hidden {
 
 .modal-feedback {
   display: none;
-  z-index: 5;
   position: fixed;
   top: 50%;
   left: 50%;
-  margin-top: -221px;
-  margin-left: -239px;
-  width: 478px;
-  min-height: 442px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  width: 478px;
+  min-height: 442px;
+  margin-top: -221px;
+  margin-left: -239px;
   padding: 15px 25px 27px 24px;
+  z-index: 5;
   color: #323232;
   background-color: #f8f7f4;
   border-radius: 10px;
@@ -1871,21 +1826,18 @@ input[type="radio"].visually-hidden {
 
 .modal-overlay {
   display: none;
-  z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  
+  z-index: 4;
   background-color: rgba(0, 0, 0, 0.3);
 }
 
 .modal-show {
   display: block;
-  
   -webkit-animation: bounce 0.6s;
-  
           animation: bounce 0.6s;
 }
 
@@ -1913,11 +1865,11 @@ input[type="radio"].visually-hidden {
           box-sizing: border-box;
   margin: 0;
   margin-top: 20px;
-  border: 1px solid #d3d3d2;
-  border-radius: 5px;
   font: inherit;
   line-height: 24px;
   color: #323232;
+  border: 1px solid #d3d3d2;
+  border-radius: 5px;
 }
 
 .feedback-form input[type="text"],
@@ -1959,9 +1911,9 @@ input[type="radio"].visually-hidden {
 .feedback-form input[type="text"]:hover,
 .feedback-form input[type="email"]:hover,
 .feedback-form textarea:hover {
+  border-color: #c7c6c5;
   -webkit-box-shadow: inset 0 0 0 1px #c7c6c5;
   box-shadow: inset 0 0 0 1px #c7c6c5;
-  border-color: #c7c6c5;
 }
 
 .feedback-form input[type="text"],
@@ -1976,9 +1928,9 @@ input[type="radio"].visually-hidden {
 .feedback-form input[type="text"]:focus,
 .feedback-form input[type="email"]:focus,
 .feedback-form textarea:focus {
+  border-color: #8fbdec;
   -webkit-box-shadow: inset 0 0 0 1px #8fbdec;
   box-shadow: inset 0 0 0 1px #8fbdec;
-  border-color: #8fbdec;
 }
 
 .feedback-btn {
@@ -1999,11 +1951,11 @@ input[type="radio"].visually-hidden {
 
 .close-btn::before {
   content: "";
-  width: 18px;
-  height: 3px;
   position: absolute;
   top: 6px;
   left: -1px;
+  width: 18px;
+  height: 3px;
   background-color: #231f20;
   -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
@@ -2012,11 +1964,11 @@ input[type="radio"].visually-hidden {
 
 .close-btn::after {
   content: "";
-  width: 18px;
-  height: 3px;
   position: absolute;
   top: 6px;
   left: -1px;
+  width: 18px;
+  height: 3px;
   background-color: #231f20;
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
