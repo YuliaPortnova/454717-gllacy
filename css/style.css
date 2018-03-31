@@ -125,6 +125,7 @@ input[type="radio"].visually-hidden,
   margin: 0;
   padding: 0;
   list-style: none;
+  list-style-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=);
 }
 
 .site-navigation{
@@ -177,11 +178,16 @@ input[type="radio"].visually-hidden,
           box-shadow: inset 0px 2px 1px 0px rgba(105, 105, 105, 1);
 }
 
+.wrapper-menu {
+  padding: 5px;
+}
+
 .catalog-menu {
   display: none;
   position: absolute;
   z-index: 1;
   top: 30px;
+  left: 0px;
   width: 143px;
   min-height: 171px;
   background-color: #f8f7f4;
