@@ -1321,7 +1321,7 @@ input[type="radio"].visually-hidden,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 35px;
-  padding: 6px 35px 7px 15px; 
+  padding: 7px 35px 6px 15px; 
   margin-top: 5px;
   color: #ffffff; 
   background-color: rgba(255, 255, 255, 0.2);
@@ -1386,7 +1386,7 @@ input[type="radio"].visually-hidden,
           box-sizing: border-box;
   height: 36px;
   margin: 0;
-  padding: 8px 20px;
+  padding: 7px 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
   cursor: pointer;
@@ -1414,23 +1414,30 @@ input[type="radio"].visually-hidden,
   opacity: 1;
 }
 
-.range-block img {
+.range-block .handle::before,
+.range-block .handle::after {
+  content: "";
+  position: absolute;
+  top: 7px;
   width: 20px;
   height: 23px;
+  background-image: url("../img-svg/filter-button.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-.range-block img:nth-child(1) {
-  padding-left: 13px;
+.range-block .handle::before {
+  left: 33px;
 }
 
-.range-block img:nth-child(2) {
-  padding-left: 75px;
+.range-block .handle::after {
+  left: 131px;
 }
 
 .filter-row-fat input[type="radio"] + .radio-indicator {
   position: absolute;
   top: -3px;
-  left: 0px;
+  left: -2px;
   width: 14px;
   height: 14px;
   border: 4px solid #ffffff;
