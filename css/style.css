@@ -1351,7 +1351,7 @@ input[type="radio"].visually-hidden,
 .price-title {
   margin: 0;
   margin-bottom: 7px;
-  padding-left: 15px;
+  padding-left: 14px;
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
@@ -1381,7 +1381,7 @@ input[type="radio"].visually-hidden,
 }
 
 .price-title input[type="text"] {
-  width: 24px;
+  width: 26px;
   margin: 0;
   padding: 0;
   font: inherit;
@@ -1400,29 +1400,15 @@ input[type="radio"].visually-hidden,
   padding: 7px 20px;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  cursor: pointer;
 }
 
-.range-block::before {
-  content: "";
+.handle {
   position: absolute;
   top: 16px;
   left: 20px;
   width: 176px;
   height: 4px;
-  background-color: #f8f7f4;
-  opacity: 0.5;
-}
-
-.range-block::after {
-  content: "";
-  position: absolute;
-  top: 16px;
-  left: 52px;
-  width: 85px;
-  height: 4px;
-  background-color: #f8f7f4;
-  opacity: 1;
+  background-image: linear-gradient(to right, rgba(248, 247, 244, 0.5) 0px, rgba(248, 247, 244, 0.5) 22px, #f8f7f4 22px, #f8f7f4 121px, rgba(248, 247, 244, 0.5) 121px, rgba(248, 247, 244, 0.5) 176px);
 }
 
 .range-block .handle::before,
@@ -1430,20 +1416,21 @@ input[type="radio"].visually-hidden,
   content: "";
   position: absolute;
   z-index: 1;
-  top: 7px;
+  top: -8px;
   width: 20px;
   height: 23px;
   background-image: url("../img-svg/filter-button.svg");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 .range-block .handle::before {
-  left: 33px;
+  left: 13px;
 }
 
 .range-block .handle::after {
-  left: 131px;
+  left: 110px;
 }
 
 .filter-row-fat input[type="radio"] + .radio-indicator {
