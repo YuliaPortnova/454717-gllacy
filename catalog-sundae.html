@@ -5,7 +5,7 @@
     <title>Сливочное мороженое</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -20,7 +20,7 @@
               <a class="main-menu-catalog current" href="#">Каталог</a>
               <div class="wrapper-menu">
                 <ul class="catalog-menu">
-                  <li>
+                  <li class="catalog-menu-new">
                     <a href="#">Новинки</a>
                   </li>
                   <li>
@@ -131,10 +131,8 @@
                     </td>
                     <td class="basket-table-item">450 руб.</td>
                   </tr>
-                  <tr>
-                    <td class="basket-table-sum" colspan="5">Итого: 750 руб.</td>
-                  </tr>
-                </table>
+                </table>  
+                <div class="basket-table-sum">Итого: 750 руб.</div>
                 <a class="btn basket-table-btn" href="#">Оформить заказ</a>
               </section>
             </div>
@@ -143,7 +141,7 @@
       </section>
       <p class="tel">
         С 10 до 20, ежедневно
-        <b>8 812 450-25-25</b>
+        <a href="tel:8 812 450-25-25">8 812 450-25-25</a>
       </p>   
     </header>
     
@@ -439,8 +437,8 @@
               <span class="visually-hidden">Назад</span>
             </a>
           </li>
-          <li class="pagination-item pagination-item-curent">
-            <a>
+          <li class="pagination-item">
+            <a class="pagination-item-curent">
               <span class="visually-hidden">Текущая страница:</span>
               1
             </a>

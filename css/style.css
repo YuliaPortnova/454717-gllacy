@@ -196,15 +196,15 @@ input[type="radio"].visually-hidden,
           box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.catalog-menu-new:first-of-type a {
-  font-weight: 700;
+.catalog-menu-new {
+  margin-bottom: 9px;
 }
 
-.catalog-menu-new:first-of-type::after {
+.catalog-menu-new::after {
   content: "";
   position: absolute;
   left: 6px;
-  top: 39px;
+  top: 37px;
   height: 1px;
   width: 128px;
   background-color: #d1d0ce;
@@ -213,8 +213,8 @@ input[type="radio"].visually-hidden,
 .catalog-menu a {
   display: block;
   height: 28px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  margin-top: 4px;
+  margin-bottom: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box; 
   padding: 5px 20px 5px 21px;
@@ -222,6 +222,10 @@ input[type="radio"].visually-hidden,
   line-height: 16px;
   font-weight: 400;
   color: #323232;
+}
+
+.catalog-menu-new a {
+  font-weight: 700;
 }
 
 .catalog-menu a:hover {
@@ -430,7 +434,7 @@ input[type="radio"].visually-hidden,
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   width: 540px;
-  height: 242px;
+  min-height: 242px;
   margin: 5px;
   padding: 8px 15px 31px 12px;
   font-size: 13px;
@@ -453,6 +457,7 @@ input[type="radio"].visually-hidden,
   margin-right: 9px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .close-btn-little::before {
@@ -713,9 +718,10 @@ input[type="radio"].visually-hidden,
   text-align: right;
 }
 
-.tel b {
+.tel a {
   display: block;
   padding-top: 5px;
+  color: #ffffff;
   font-size: 22px;
   line-height: 24px;
 }
@@ -1202,7 +1208,8 @@ input[type="radio"].visually-hidden,
   line-height: 20px;
 }
 
-.contact b {
+.contact b,
+.contact-text-2 a {
   display: block;
   margin: 0;
   padding: 0;
@@ -1221,8 +1228,10 @@ input[type="radio"].visually-hidden,
   padding-bottom: 25px;
 }
 
-.contact-text-2 b {
+.contact-text-2 a {
+  display: block;
   padding-top: 5px;
+  color: #323232;
 }
 
 .contact-btn {
@@ -1531,20 +1540,18 @@ input[type="radio"].visually-hidden,
   list-style: none;
 }
 
-.pagination-item {
+.pagination-item a{
+  display: block;
   margin-right: 2px;
   margin-left: 2px;
   padding: 2px 8px 2px 8px;
+  color: #ffffff;
+  font-weight: 500;
   border-radius: 50%;
 }
 
-.pagination-item a {
-  color: #ffffff;
-  font-weight: 500;
-}
-
-.pagination-item:hover:not(.pagination-item-curent),
-.pagination-item:focus:not(.pagination-item-curent) {
+.pagination-item a:hover:not(.pagination-item-curent),
+.pagination-item a:focus:not(.pagination-item-curent) {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
@@ -1552,13 +1559,9 @@ input[type="radio"].visually-hidden,
   color: #323232;
 }
 
-.pagination-item-curent {
+.pagination-item .pagination-item-curent {
   color: #323232;
   background-color: #ffffff;
-}
-
-.pagination-item-curent a {
-  color: #323232;
 }
 
 .pagination-control {
@@ -1614,10 +1617,10 @@ input[type="radio"].visually-hidden,
   display: block;
   width: 32px;
   height: 32px;
-  margin-right: 14px;
+  margin-right: 11px;
   background-repeat: no-repeat;
   background-position: center;
-  border: 2px solid rgba(255, 255, 255, 0.5);
+  border: 3px solid rgba(255, 255, 255, 0.5);
   border-radius: 50%;
   opacity: 0.8;
 }
@@ -1911,6 +1914,7 @@ input[type="radio"].visually-hidden,
 .feedback-form textarea {
   width: 428px;
   padding: 8px 15px 25px 15px;
+  resize: none;
 }
 
 
