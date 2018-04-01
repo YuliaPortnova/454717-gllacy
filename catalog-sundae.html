@@ -176,7 +176,15 @@
               </select>
             </div>
             <div class="filter-row-price">
-              <p class="price-title">Цена: 100 руб. - 500 руб.</p>
+              <p class="price-title">
+                Цена: 
+                <label for="price-min" class="visually-hidden visually-hidden-active">Минимальная цена</label>
+                <input type="text" name="price-min" value="100">
+                руб. - 
+                <label for="price-max" class="visually-hidden visually-hidden-active">Максимальная цена</label>
+                <input type="text" name="price-max" value="500">
+                руб.
+              </p>
               <div class="range-block">
                 <div class="handle"></div>
               </div>
