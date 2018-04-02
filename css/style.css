@@ -436,7 +436,7 @@ input[type="radio"].visually-hidden,
   width: 540px;
   min-height: 242px;
   margin: 5px;
-  padding: 8px 15px 31px 12px;
+  padding: 8px 15px 20px 12px;
   font-size: 13px;
   line-height: 16px;
   color: #323232;
@@ -1408,6 +1408,8 @@ input[type="radio"].visually-hidden,
   left: 20px;
   width: 176px;
   height: 4px;
+  background-image: -webkit-linear-gradient(left, rgba(248, 247, 244, 0.5) 0px, rgba(248, 247, 244, 0.5) 22px, #f8f7f4 22px, #f8f7f4 121px, rgba(248, 247, 244, 0.5) 121px, rgba(248, 247, 244, 0.5) 176px);
+  background-image: -o-linear-gradient(left, rgba(248, 247, 244, 0.5) 0px, rgba(248, 247, 244, 0.5) 22px, #f8f7f4 22px, #f8f7f4 121px, rgba(248, 247, 244, 0.5) 121px, rgba(248, 247, 244, 0.5) 176px);
   background-image: linear-gradient(to right, rgba(248, 247, 244, 0.5) 0px, rgba(248, 247, 244, 0.5) 22px, #f8f7f4 22px, #f8f7f4 121px, rgba(248, 247, 244, 0.5) 121px, rgba(248, 247, 244, 0.5) 176px);
 }
 

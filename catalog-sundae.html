@@ -5,7 +5,7 @@
     <title>Сливочное мороженое</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header container">
@@ -17,7 +17,7 @@
           </a>
           <ul class="site-navigation">
             <li class="main-menu">
-              <a class="main-menu-catalog current" href="#">Каталог</a>
+              <a class="current" href="#">Каталог</a>
               <div class="wrapper-menu">
                 <ul class="catalog-menu">
                   <li class="catalog-menu-new">
@@ -141,7 +141,7 @@
       </section>
       <p class="tel">
         С 10 до 20, ежедневно
-        <a href="tel:8 812 450-25-25">8 812 450-25-25</a>
+        <a href="tel:+78124502525">8 812 450-25-25</a>
       </p>   
     </header>
     
@@ -179,10 +179,10 @@
               <p class="price-title">
                 Цена: 
                 <label for="price-min" class="visually-hidden visually-hidden-active">Минимальная цена</label>
-                <input type="text" name="price-min" value="100">
+                <input type="text" name="price-min" id="price-min" value="100">
                 руб. - 
                 <label for="price-max" class="visually-hidden visually-hidden-active">Максимальная цена</label>
-                <input type="text" name="price-max" value="500">
+                <input type="text" name="price-max" id="price-max" value="500">
                 руб.
               </p>
               <div class="range-block">
